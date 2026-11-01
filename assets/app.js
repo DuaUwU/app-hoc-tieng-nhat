@@ -271,7 +271,7 @@ $('exportBtn').onclick=exportData;$('exportBtn2').onclick=exportData;$('importBt
 
 let examRun={qs:[],idx:0,answers:[],started:0,remaining:70*60,timer:null,answered:false};
 function examShuffle(a){return shuffle(a.slice())}
-function examPickDistinct(arr,n){return examShuffle(arr).slice(0,Math.min(n,arr.length))}
+function examPickDistinct(arr,n){const seen=new Set();return examShuffle(arr).filter(q=>{const key=String(q.prompt||'').normalize('NFKC').replace(/[\s　]/g,'');if(!key||seen.has(key))return false;seen.add(key);return true}).slice(0,Math.min(n,seen.size))}
 function examBuildQuestions(){
  const qs=[];
  // Cloze-style Kanji/vocabulary questions use actual Japanese practice sentences from Units 36–50.
