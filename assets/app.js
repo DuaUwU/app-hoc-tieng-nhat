@@ -1,8 +1,9 @@
-const [kanjiData, vocabularyData, grammarData, examData] = await Promise.all([
+const [kanjiData, vocabularyData, grammarData, examData, grammarFixData] = await Promise.all([
   fetch('./data/kanji.json').then(readJson),
   fetch('./data/vocabulary.json').then(readJson),
   fetch('./data/grammar.json').then(readJson),
   fetch('./data/exam.json').then(readJson),
+  fetch('./data/grammar-fixes.json').then(readJson),
 ]);
 async function readJson(response) {
   if (!response.ok) throw new Error('Không tải được dữ liệu học: ' + response.url);
@@ -17,7 +18,7 @@ const EXAM_GRAMMAR = examData.grammar;
 const EXAM_KANJI = examData.kanji;
 const pageNames = ["home","dictionary","grammar","practice","exam","review","stats"];
 const pageMarkup = await Promise.all(pageNames.map(name =>
-  fetch('./pages/' + name + '.html?v=pixel-20261102b').then(readText)
+  fetch('./pages/' + name + '.html?v=pixel-20261102c').then(readText)
 ));
 document.getElementById('pageMount').innerHTML = pageMarkup.join('\n');
 /* Pixel interface details adapted to the split-page app. */
@@ -173,29 +174,15 @@ function speak(text,rate){if(!('speechSynthesis'in window)){toast('Trình duyệ
 $('vocabSearch').addEventListener('input',renderVocab);$('vocabLesson').addEventListener('change',renderVocab);$('vocabSort').addEventListener('change',renderVocab);$('kanjiSearch').addEventListener('input',renderKanji);$('kanjiUnit').addEventListener('change',renderKanji);
 // Flashcard feature removed by request. Dictionary search and filters remain available.\n// Grammar records imported from ngu_phap_N4_bai26-50.json (Lessons 26–50).
 
-function renderGrammar(){
-  const lessonFilter = $('grammarLesson').value;
-  const query=$('grammarSearch').value.trim().toLocaleLowerCase('vi');
-  const list=GRAMMAR.filter(x=>(lessonFilter==='all'||String(x.lesson)===lessonFilter)&&(!query||[x.title,...x.pattern,...x.explanations,...x.examples.flatMap(ex=>[ex.ja,ex.vi]),...x.other].join(' ').toLocaleLowerCase('vi').includes(query)));
-  $('grammarCount').textContent=list.length+' mẫu ngữ pháp';
-  const cardsByLesson=new Map();
-  list.forEach(x=>{
-    const patterns=Array.isArray(x.pattern)?x.pattern.filter(Boolean):[];
-    const explanations=Array.isArray(x.explanations)?x.explanations.filter(Boolean):[];
-    const examples=Array.isArray(x.examples)?x.examples.filter(ex=>ex.ja||ex.vi):[];
-    const other=Array.isArray(x.other)?x.other.filter(Boolean):[];
-    const visiblePatterns=patterns.slice(0,3),extraPatterns=patterns.slice(3);
-    const structure=patterns.length?`<div class="grammar-block"><h4>Cấu trúc</h4><div class="grammar-patterns">${visiblePatterns.map(t=>`<div class="grammar-pattern jp">${esc(t)}</div>`).join('')}</div></div>`:'';
-    const mainIdea=explanations.length?`<div class="grammar-main-idea"><b>Dùng khi</b><p>${esc(explanations[0])}</p></div>`:'';
-    const usage=explanations.length>1?`<div class="grammar-block"><h4>Cách dùng thêm</h4><ul class="grammar-usage">${explanations.slice(1).map(t=>`<li>${esc(t)}</li>`).join('')}</ul></div>`:'';
-    const exampleMarkup=examples.length?`<div class="grammar-block"><h4>Ví dụ</h4><div class="grammar-examples">${examples.map(ex=>`<div class="grammar-example">${ex.ja?`<div class="jp">${esc(ex.ja)}</div>`:''}${ex.vi?`<div class="grammar-translation">${esc(ex.vi)}</div>`:''}</div>`).join('')}</div></div>`:'';
-    const details=extraPatterns.length||other.length?`<details class="grammar-details"><summary>Chi tiết và ghi chú từ tài liệu</summary>${extraPatterns.length?`<div class="grammar-patterns">${extraPatterns.map(t=>`<div class="grammar-pattern jp">${esc(t)}</div>`).join('')}</div>`:''}${other.length?`<ul>${other.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>`:''}</details>`:'';
-    const card=`<article class="card grammar-card"><div class="grammar-card-meta">BÀI ${x.lesson}<span>MỤC ${x.number}</span></div><h3>${esc(x.title)}</h3>${mainIdea||'<p class="meta">Xem cấu trúc và ví dụ để hiểu cách dùng mẫu câu này.</p>'}${structure}${usage}${exampleMarkup}${details}</article>`;
-    cardsByLesson.set(x.lesson,[...(cardsByLesson.get(x.lesson)||[]),card]);
-  });
-  $('grammarList').innerHTML=list.length?[...cardsByLesson].map(([lesson,cards])=>`<section class="grammar-lesson"><h3 class="grammar-lesson-title">Bài ${lesson}<span>${cards.length} mẫu</span></h3><div class="grammar-lesson-cards">${cards.join('')}</div></section>`).join(''):'<div class="empty">Không tìm thấy mẫu ngữ pháp phù hợp.</div>';
-}
-$('grammarLesson').onchange = renderGrammar;$('grammarSearch').addEventListener('input',renderGrammar);
+function cleanJa(s){return String(s||'').replace(/^\s*[QAB母子ＱＡＢ]\s*[:：]\s*/,'').replace(/(?<=[^\x00-\x7F])\s+(?=[^\x00-\x7F])/g,'').trim()}
+function grammarKey(title){const m=String(title||'').match(/[\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Han}ー]{2,}/gu);return m?m.sort((a,b)=>b.length-a.length)[0]:''}
+function grammarSentences(lessons,only){const src=only?[only]:GRAMMAR.filter(g=>!lessons||lessons.includes(String(g.lesson)));return src.flatMap(g=>(g.examples||[]).filter(ex=>{const j=cleanJa(ex.ja);return j.length>=6&&!/^[A-Za-z\s]+$/.test(j)}).map(ex=>({lesson:g.lesson,title:g.title,key:grammarKey(g.title),ja:cleanJa(ex.ja),vi:ex.vi||''})))}
+function beginGrammarQuiz(qs,activity){quizRun.qs=qs;quizRun.idx=0;quizRun.correct=0;quizRun.wrong=[];quizRun.started=Date.now();quizRun.answered=false;quizRun.progressActive=true;quizRun.activity=activity;clearInterval(quizRun.timer);quizRun.timer=setInterval(()=>{const sec=Math.floor((Date.now()-quizRun.started)/1000),el=$('quizTimer');if(el)el.textContent=String(Math.floor(sec/60)).padStart(2,'0')+':'+String(sec%60).padStart(2,'0')},1000);$('quizTimer').textContent='00:00';$('quizSetup').classList.add('hidden');$('quizResult').classList.add('hidden');$('quizPlay').classList.remove('hidden');renderQuizQ()}
+function grammarDrill(lesson,number){const g=GRAMMAR.find(x=>x.lesson===lesson&&x.number===number);if(!g)return;const own=grammarSentences(null,g),pool=grammarSentences(null),qs=[];own.forEach(e=>['fill','order'].forEach(act=>{const q=makeQ('grammar',e,pool,act);if(q&&q.answer&&(act==='order'||(q.opts&&q.opts.length>=2)))qs.push(q)}));if(!qs.length){toast('Mẫu này chưa có đủ câu ví dụ để luyện.');return}navigatePage('practice');beginGrammarQuiz(shuffle(qs).slice(0,8),'grammar')}
+function applyGrammarFixes(){for(let i=GRAMMAR.length-1;i>=0;i--){const g=GRAMMAR[i],fx=grammarFixData[g.lesson+'.'+g.number];if(fx&&fx.remove){GRAMMAR.splice(i,1);continue}g.notes=[];if(fx){['title','pattern','explanations','examples','table','notes'].forEach(k=>{if(fx[k]!==undefined)g[k]=fx[k]});g.other=[];g.fixed=true;continue}const pat=[],nt=[];(g.pattern||[]).forEach(p=>(/^\s*[•❖➢⮚]|^(Chú ý|Lưu ý)/.test(p)?nt:pat).push(p.replace(/^\s*[•❖➢⮚]\s*/,'')));g.pattern=pat;g.notes.push(...nt);g.examples=(g.examples||[]).map(e=>{let vi=String(e.vi||'');const m=vi.search(/\s*(LƯU Ý|GIỐNG NHAU|Chú ý|Lưu ý)/);if(m>=0){const rest=vi.slice(m).trim();vi=vi.slice(0,m).trim();if(rest)g.notes.push(rest)}return {ja:String(e.ja||'').trim(),vi}}).filter(e=>e.ja)}}
+applyGrammarFixes();
+function renderGrammar(){const lessonFilter=$('grammarLesson').value,list=GRAMMAR.filter(x=>lessonFilter==='all'||String(x.lesson)===lessonFilter);const html=list.map(x=>{const patterns=x.pattern.length?`<div class="formula jp">${x.pattern.map(esc).join('<br>')}</div>`:'';const table=x.table?`<table class="gtable">${x.table.head?`<tr>${x.table.head.map(h=>`<th>${esc(h)}</th>`).join('')}</tr>`:''}${x.table.rows.map(r=>`<tr>${r.map(c=>`<td class="jp">${esc(c)}</td>`).join('')}</tr>`).join('')}</table>`:'';const explanations=x.explanations.length?`<ul>${x.explanations.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>`:'';const examples=x.examples.length?`<div class="grammar-examples">${x.examples.map(ex=>`<div class="grammar-example">${ex.ja?`<div class="jp">${esc(ex.ja)} <button type="button" class="btn small" data-speak="${esc(cleanJa(ex.ja))}">Nghe</button>${ex.added?'<span class="tag-added">bổ sung</span>':''}</div>`:''}${ex.vi?`<div class="meta">${esc(ex.vi)}</div>`:''}</div>`).join('')}</div>`:'';const notes=x.notes&&x.notes.length?`<ul class="g-notes">${x.notes.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>`:'';const other=!x.fixed&&x.other&&x.other.length?`<details><summary>Ghi chú / nội dung bổ sung từ tài liệu</summary><ul>${x.other.map(t=>`<li>${esc(t)}</li>`).join('')}</ul></details>`:'';const canDrill=grammarSentences(null,x).length>0;const drill=canDrill?`<div class="toolbar"><button type="button" class="btn small primary" data-drill="${x.lesson}.${x.number}">Luyện mẫu này</button></div>`:'';return `<article class="card grammar-card"><div class="meta">MINNA · BÀI ${x.lesson} · MỤC ${x.number}</div><h3>${esc(x.title)}</h3>${patterns}${table}${explanations}${examples}${notes}${other}${drill}</article>`}).join('');$('grammarList').innerHTML=html||'<div class="empty">Chưa có nội dung cho bài này.</div>';bindSpeak($('grammarList'));$('grammarList').querySelectorAll('[data-drill]').forEach(b=>b.onclick=()=>{const [l,n]=b.dataset.drill.split('.').map(Number);grammarDrill(l,n)})}
+$('grammarLesson').onchange=renderGrammar;
 // Multiple choice generator. Distractors are restricted to the selected lesson/unit pool.
 let quizRun={qs:[],idx:0,correct:0,wrong:[],started:0,answered:false,timer:null};
 function vocabRuby(item){
