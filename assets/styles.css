@@ -197,9 +197,8 @@ body.exam-focus .exam-prompt{font-size:clamp(22px,4vw,30px);margin:24px 0}
 /* Details that were present in the reference layout but absent from the split pages. */
 .brand{display:grid;grid-template-columns:36px minmax(0,1fr);grid-template-rows:auto auto;align-items:center;column-gap:10px}
 .brand>.spr{grid-column:1;grid-row:1/3}
-.brand b,.brand small{grid-column:2}
-.brand b{font-family:var(--font);font-size:26px;letter-spacing:2px;color:var(--accent)}
-.brand small{font-weight:700}
+.brand b{grid-column:2;grid-row:1;white-space:nowrap;font-family:var(--font);font-size:26px;letter-spacing:2px;color:var(--accent)}
+.brand small{grid-column:2;grid-row:2;white-space:nowrap;font-weight:700;font-size:11px}
 .nav button .spr{width:24px;height:24px}
 .mobile-nav button .spr{width:24px;height:24px}
 .quick .spr{display:block;margin-bottom:8px}
