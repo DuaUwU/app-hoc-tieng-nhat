@@ -1,0 +1,703 @@
+{
+  "26.1": {
+    "pattern": [
+      "V 普通形 ＋ んです",
+      "A い ＋ んです",
+      "A な：だ → な ＋ んです",
+      "N：だ → な ＋ んです"
+    ],
+    "explanations": [
+      "Dùng để giải thích lý do, hoàn cảnh, hoặc xác nhận lại điều vừa nghe/thấy."
+    ],
+    "table": {
+      "head": [
+        "Lịch sự",
+        "Thể thường",
+        "＋ んです"
+      ],
+      "rows": [
+        [
+          "たべます",
+          "たべる",
+          "たべるんです"
+        ],
+        [
+          "たべません",
+          "たべない",
+          "たべないんです"
+        ],
+        [
+          "さむいです",
+          "さむい",
+          "さむいんです"
+        ],
+        [
+          "さむかったです",
+          "さむかった",
+          "さむかったんです"
+        ],
+        [
+          "ひまです",
+          "ひまだ",
+          "ひまなんです"
+        ],
+        [
+          "ひまでした",
+          "ひまだった",
+          "ひまだったんです"
+        ],
+        [
+          "ひまじゃありません",
+          "ひまじゃない",
+          "ひまじゃないんです"
+        ],
+        [
+          "びょうきです",
+          "びょうきだ",
+          "びょうきなんです"
+        ]
+      ]
+    },
+    "examples": [
+      {
+        "ja": "どうして 遅れたんですか。",
+        "vi": "Tại sao bạn đến muộn vậy?",
+        "added": true
+      },
+      {
+        "ja": "バスが 来なかったんです。",
+        "vi": "Vì xe buýt không đến.",
+        "added": true
+      }
+    ]
+  },
+  "26.5": {
+    "examples": [
+      {
+        "ja": "リーさん、どこで 日本語を 勉強したらいいですか。",
+        "vi": "Lee ơi, tôi nên học tiếng Nhật ở đâu thì tốt?"
+      },
+      {
+        "ja": "Mirai Nihongoで 勉強したらいいと思います。",
+        "vi": "Tôi nghĩ nên học ở Mirai Nihongo."
+      }
+    ]
+  },
+  "29.1": {
+    "examples": [
+      {
+        "ja": "ドアが 開きます。",
+        "vi": "Cửa mở (tự mở).",
+        "added": true
+      },
+      {
+        "ja": "ドアを 開けます。",
+        "vi": "Tôi mở cửa.",
+        "added": true
+      },
+      {
+        "ja": "コップが 割れました。",
+        "vi": "Cái cốc bị vỡ.",
+        "added": true
+      },
+      {
+        "ja": "コップを 割りました。",
+        "vi": "Tôi làm vỡ cái cốc.",
+        "added": true
+      }
+    ],
+    "table": {
+      "head": [
+        "自動詞 (tự động từ)",
+        "他動詞 (tha động từ)"
+      ],
+      "rows": [
+        [
+          "開きます (mở)",
+          "開けます (mở)"
+        ],
+        [
+          "割れます (vỡ)",
+          "割ります (làm vỡ)"
+        ]
+      ]
+    }
+  },
+  "29.4": {
+    "examples": [
+      {
+        "ja": "駅に／へ 行きます。",
+        "vi": "Đi đến nhà ga."
+      },
+      {
+        "ja": "学校に／へ 来ます。",
+        "vi": "Đến trường."
+      },
+      {
+        "ja": "家に／へ 帰ります。",
+        "vi": "Trở về nhà."
+      }
+    ]
+  },
+  "30.1": {
+    "examples": [
+      {
+        "ja": "かばんの中に 本や ノートや ペンなどが いれてあります。",
+        "vi": "Trong cặp có để sách, vở, bút…"
+      },
+      {
+        "ja": "窓が 閉まっています。",
+        "vi": "Cửa sổ đang đóng (chỉ nêu trạng thái)."
+      },
+      {
+        "ja": "窓が 閉めてあります。",
+        "vi": "Cửa sổ được đóng sẵn (kết quả hành động có chủ ý của ai đó)."
+      }
+    ],
+    "notes": [
+      "V ています: nêu trạng thái hiện tại. V てあります: trạng thái là kết quả của hành động có chủ ý (dùng tha động từ)."
+    ]
+  },
+  "30.4": {
+    "examples": [
+      {
+        "ja": "どんな スポーツを していますか。",
+        "vi": "Bạn thường chơi môn thể thao gì?"
+      },
+      {
+        "ja": "そうですね。テニスとか 水泳とか…",
+        "vi": "À, tôi chơi mấy môn như quần vợt, bơi lội…"
+      }
+    ],
+    "notes": [
+      "や: chỉ nối danh từ, hay dùng trong văn viết. とか: nối cả danh từ lẫn động từ, hay dùng trong văn nói."
+    ]
+  },
+  "31.1": {
+    "examples": [
+      {
+        "ja": "一緒に 昼ご飯を 食べよう。",
+        "vi": "Cùng ăn trưa nhé.",
+        "added": true
+      },
+      {
+        "ja": "ちょっと 休もう。",
+        "vi": "Nghỉ một chút nào.",
+        "added": true
+      }
+    ]
+  },
+  "32.5": {
+    "examples": [
+      {
+        "ja": "何か 心配なことが あるんですか。",
+        "vi": "Chị có điều gì lo lắng à?"
+      },
+      {
+        "ja": "お母さんの けんこうを 心配しています。",
+        "vi": "Tôi đang lo lắng cho sức khỏe của mẹ."
+      }
+    ]
+  },
+  "33.1": {
+    "examples": [
+      {
+        "ja": "遅れるな。",
+        "vi": "Cấm đi muộn."
+      },
+      {
+        "ja": "早く 食べろ。",
+        "vi": "Ăn nhanh lên!",
+        "added": true
+      },
+      {
+        "ja": "ここに 入るな。",
+        "vi": "Cấm vào đây.",
+        "added": true
+      }
+    ]
+  },
+  "34.3": {
+    "title": "V1て・V1ないで ＋ V2"
+  },
+  "35.1": {
+    "examples": [
+      {
+        "ja": "安ければ、買います。",
+        "vi": "Nếu rẻ thì tôi mua.",
+        "added": true
+      },
+      {
+        "ja": "雨が 降れば、行きません。",
+        "vi": "Nếu trời mưa thì tôi không đi.",
+        "added": true
+      }
+    ]
+  },
+  "35.2": {
+    "examples": [
+      {
+        "ja": "レバーを ひけば、ドアが ひらきます。",
+        "vi": "Nếu kéo cần gạt thì cửa sẽ mở."
+      },
+      {
+        "ja": "彼が 行けば、私も 行きます。",
+        "vi": "Nếu anh ấy đi thì tôi cũng đi."
+      }
+    ],
+    "notes": [
+      "Vế trước nêu điều kiện cần thiết để vế sau xảy ra.",
+      "Cũng dùng để đưa lời khuyên, gợi ý cho một tình huống."
+    ]
+  },
+  "36.2": {
+    "examples": [
+      {
+        "ja": "最近、なっとうが 食べられるようになりました。",
+        "vi": "Gần đây tôi đã ăn được natto."
+      },
+      {
+        "ja": "先月から、毎朝 ジョギングを するようになりました。",
+        "vi": "Từ tháng trước tôi bắt đầu chạy bộ mỗi sáng."
+      },
+      {
+        "ja": "日本の新聞が 読めるようになりましたか。",
+        "vi": "Bạn đã đọc được báo Nhật chưa?"
+      },
+      {
+        "ja": "はい、読めるようになりました。",
+        "vi": "Rồi, tôi đã đọc được."
+      },
+      {
+        "ja": "いいえ、まだ 読めません。",
+        "vi": "Chưa, tôi vẫn chưa đọc được."
+      }
+    ],
+    "notes": [
+      "Không dùng ～ようになりませんでした để trả lời phủ định; dùng いいえ、まだ～ません。"
+    ]
+  },
+  "36.4": {
+    "examples": [
+      {
+        "ja": "毎日、2時間ぐらい 日本語を 勉強するようにしてください。",
+        "vi": "Các em cố gắng mỗi ngày học tiếng Nhật khoảng 2 tiếng nhé."
+      }
+    ],
+    "notes": [
+      "Không dùng mẫu này khi nhờ làm việc ngay tại chỗ: ✕ まどを 開けるようにしてください → ○ まどを 開けてください。"
+    ]
+  },
+  "37.1": {
+    "examples": [
+      {
+        "ja": "私は 先生に ほめられました。",
+        "vi": "Tôi được thầy khen.",
+        "added": true
+      },
+      {
+        "ja": "私は 友達に 笑われました。",
+        "vi": "Tôi bị bạn cười.",
+        "added": true
+      }
+    ]
+  },
+  "37.2": {
+    "examples": [
+      {
+        "ja": "私は 部長に たのまれました。",
+        "vi": "Tôi bị trưởng phòng nhờ vả."
+      },
+      {
+        "ja": "弟に おもちゃを こわされました。",
+        "vi": "Tôi bị em trai làm hỏng đồ chơi."
+      }
+    ],
+    "notes": [
+      "A は B に N を V受身: A là người bị tác động; N là vật thuộc sở hữu của A (đồ vật, bộ phận cơ thể)."
+    ]
+  },
+  "38.1": {
+    "examples": [
+      {
+        "ja": "映画を 見るのが 好きです。",
+        "vi": "Tôi thích xem phim.",
+        "added": true
+      },
+      {
+        "ja": "日本語を 話すのは 難しいです。",
+        "vi": "Nói tiếng Nhật thì khó.",
+        "added": true
+      }
+    ]
+  },
+  "38.4": {
+    "examples": [
+      {
+        "ja": "やまださんが 会社を やめたのを 知っていますか。",
+        "vi": "Bạn có biết anh Yamada đã nghỉ việc tuần trước rồi không?"
+      },
+      {
+        "ja": "ギャー先生が 結婚しているのを 知っていますか。",
+        "vi": "Bạn có biết thầy Gya đã kết hôn không?"
+      }
+    ],
+    "notes": [
+      "知りません: người nghe chưa biết thông tin và chưa nhận được thông tin từ câu hỏi. 知りませんでした: người nghe vừa nhận được thông tin từ chính câu hỏi."
+    ]
+  },
+  "39.1": {
+    "examples": [
+      {
+        "ja": "給料を もらって、うれしかったです。",
+        "vi": "Nhận được lương nên vui."
+      },
+      {
+        "ja": "この牛乳は 古いですから、飲まないでください。",
+        "vi": "Sữa này hỏng rồi nên đừng uống."
+      }
+    ],
+    "notes": [
+      "Nếu vế 2 là câu có ý chí (nhờ vả, mệnh lệnh, rủ rê…) thì dùng から, không dùng V て."
+    ]
+  },
+  "39.4": {
+    "examples": [
+      {
+        "ja": "授業の途中で、電話が かかりました。",
+        "vi": "Đang trong giờ học thì có điện thoại."
+      }
+    ]
+  },
+  "40.3": {
+    "examples": [
+      {
+        "ja": "今晩、駅の近くの レストランで 食べてみたいです。",
+        "vi": "Tối nay em muốn ăn thử ở nhà hàng gần ga."
+      }
+    ]
+  },
+  "40.4": {
+    "examples": [
+      {
+        "ja": "この川の 長さは どうやって はかるか、知っていますか。",
+        "vi": "Bạn có biết người ta đo chiều dài của con sông này như thế nào không?"
+      }
+    ],
+    "table": {
+      "head": [
+        "A い",
+        "→ danh từ"
+      ],
+      "rows": [
+        [
+          "高い",
+          "高さ"
+        ],
+        [
+          "大きい",
+          "大きさ"
+        ]
+      ]
+    }
+  },
+  "41.4": {
+    "examples": [
+      {
+        "ja": "これは 重いんですが、手伝ってくださいませんか。",
+        "vi": "Cái này nặng quá, anh có thể giúp tôi được không?"
+      }
+    ]
+  },
+  "41.5": {
+    "examples": [
+      {
+        "ja": "結婚の プレゼントに タオルを 選びました。",
+        "vi": "Tôi chọn khăn tắm để làm quà cưới cho cô ấy."
+      }
+    ]
+  },
+  "42.1": {
+    "examples": [
+      {
+        "ja": "健康のために、毎日 やさいを 食べています。",
+        "vi": "Tôi ăn rau mỗi ngày vì sức khỏe."
+      },
+      {
+        "ja": "結婚式に 行くために、化粧します。",
+        "vi": "Tôi trang điểm để đi đám cưới.",
+        "added": true
+      },
+      {
+        "ja": "病気が 治るように、薬を 飲みました。",
+        "vi": "Tôi đã uống thuốc để bệnh khỏi."
+      },
+      {
+        "ja": "学生が よく 聞こえるように、先生が 大きい声で 話します。",
+        "vi": "Thầy giáo nói to để học sinh nghe rõ.",
+        "added": true
+      }
+    ],
+    "notes": [
+      "ために: V biểu thị chủ ý, hai vế cùng chủ ngữ, hướng tới MỤC TIÊU.",
+      "ように: V không biểu thị chủ ý (khả năng, trạng thái), hai vế có thể khác chủ ngữ, hướng tới TRẠNG THÁI / KHẢ NĂNG."
+    ]
+  },
+  "42.2": {
+    "title": "Vる／N ＋ のに／に",
+    "pattern": [
+      "V る ＋ のに ＋ 使います／便利です／かかります",
+      "N ＋ に ＋ 使います／いいです"
+    ],
+    "explanations": [
+      "Chỉ mục đích sử dụng: dùng để ～, tiện cho việc ～, cần (thời gian, tiền) để ～."
+    ],
+    "examples": [
+      {
+        "ja": "このはさみは 花を 切るのに 使います。",
+        "vi": "Cái kéo này dùng để cắt hoa.",
+        "added": true
+      },
+      {
+        "ja": "空港まで 行くのに 1時間 かかります。",
+        "vi": "Để đến sân bay mất 1 tiếng.",
+        "added": true
+      },
+      {
+        "ja": "このかばんは 旅行に 便利です。",
+        "vi": "Cái cặp này tiện cho đi du lịch.",
+        "added": true
+      }
+    ],
+    "notes": [
+      "Mục này trong PDF gốc bị chép nhầm nội dung bài 41; phần này do Claude viết lại theo mục lục."
+    ]
+  },
+  "42.3": {
+    "title": "数量詞 ＋ は／も",
+    "pattern": [
+      "数量詞 ＋ は",
+      "数量詞 ＋ も"
+    ],
+    "explanations": [
+      "～は: ít nhất là ～ (nhấn vào mức tối thiểu).",
+      "～も: tới tận ～, những ～ (nhiều hơn dự kiến)."
+    ],
+    "examples": [
+      {
+        "ja": "毎日 2時間は 勉強します。",
+        "vi": "Mỗi ngày tôi học ít nhất 2 tiếng.",
+        "added": true
+      },
+      {
+        "ja": "昨日 ビールを 5本も 飲みました。",
+        "vi": "Hôm qua tôi uống tận 5 chai bia.",
+        "added": true
+      }
+    ]
+  },
+  "42.4": {
+    "title": "～によって",
+    "pattern": [
+      "N ＋ によって ＋ ～"
+    ],
+    "explanations": [
+      "Tùy theo N mà ～ khác nhau."
+    ],
+    "examples": [
+      {
+        "ja": "国によって 習慣が 違います。",
+        "vi": "Tùy theo nước mà phong tục khác nhau.",
+        "added": true
+      },
+      {
+        "ja": "人によって 考え方が 違います。",
+        "vi": "Tùy theo người mà cách nghĩ khác nhau.",
+        "added": true
+      }
+    ]
+  },
+  "42.5": {
+    "remove": true
+  },
+  "43.4": {
+    "examples": [
+      {
+        "ja": "レポートを チェックしてくれませんか。",
+        "vi": "Anh kiểm tra lại báo cáo giúp tôi được không?"
+      }
+    ]
+  },
+  "44.4": {
+    "examples": [
+      {
+        "ja": "12月の JLPTは N4に します。",
+        "vi": "Kỳ thi JLPT tháng 12 tôi sẽ quyết định thi N4."
+      }
+    ]
+  },
+  "47.1": {
+    "pattern": [
+      "(N によると) 普通形 ＋ そうです"
+    ],
+    "examples": [
+      {
+        "ja": "母の手紙によると、父は 重い病気だそうです。",
+        "vi": "Theo thư của mẹ, nghe nói bố đang bị bệnh nặng."
+      },
+      {
+        "ja": "ミラーさんは 明日 京都へ 行くそうです。",
+        "vi": "Nghe nói anh Miller ngày mai sẽ đi Kyoto."
+      },
+      {
+        "ja": "ミラーさんは 明日 京都へ 行くと言っていました。",
+        "vi": "Anh Miller nói là ngày mai sẽ đi Kyoto."
+      }
+    ],
+    "table": {
+      "head": [
+        "",
+        "そうです (Bài 43)",
+        "そうです (Bài 47)"
+      ],
+      "rows": [
+        [
+          "Kết hợp",
+          "V ます / A い・A な bỏ い・な ＋ そうです",
+          "普通形 ＋ そうです"
+        ],
+        [
+          "Ý nghĩa",
+          "Trông có vẻ (phán đoán từ quan sát)",
+          "Nghe nói (truyền đạt thông tin)"
+        ],
+        [
+          "Ví dụ",
+          "このケーキは おいしそうです。",
+          "このケーキは おいしいそうです。"
+        ]
+      ]
+    }
+  },
+  "48.1": {
+    "examples": [
+      {
+        "ja": "母は 子どもに 野菜を 食べさせます。",
+        "vi": "Mẹ bắt con ăn rau.",
+        "added": true
+      },
+      {
+        "ja": "先生は 学生を 立たせました。",
+        "vi": "Thầy bắt học sinh đứng lên.",
+        "added": true
+      }
+    ]
+  },
+  "49.1": {
+    "pattern": [
+      "尊敬語: V られます ／ お V ます ＋ になります ／ động từ đặc biệt ／ お・ご V ます ＋ ください ／ お・ご V ます ＋ ですか"
+    ],
+    "explanations": [
+      "尊敬語 (tôn kính ngữ): dùng cho hành động của người khác, đề cao người nghe.",
+      "謙譲語 (khiêm nhường ngữ): dùng cho hành động của người nói, hạ mình trước người nghe.",
+      "丁寧語 (thể lịch sự): です・ます, thể hiện sự lễ phép trực tiếp với người nghe."
+    ],
+    "examples": [
+      {
+        "ja": "ワン先生は 日記を 読まれます。",
+        "vi": "Thầy Wang đọc nhật ký (tôn kính ngữ)."
+      }
+    ]
+  },
+  "49.4": {
+    "pattern": [],
+    "explanations": [
+      "Với động từ có dạng tôn kính đặc biệt thì dùng dạng đó, không dùng thể bị động hay お～になります."
+    ],
+    "examples": [
+      {
+        "ja": "ゴルフを なさいますか。",
+        "vi": "Anh có chơi golf không ạ? (thay cho ゴルフを しますか)"
+      }
+    ],
+    "table": {
+      "head": [
+        "Thông thường",
+        "Tôn kính ngữ"
+      ],
+      "rows": [
+        [
+          "行きます・来ます・います",
+          "いらっしゃいます"
+        ],
+        [
+          "食べます・飲みます",
+          "召し上がります"
+        ],
+        [
+          "します",
+          "なさいます"
+        ],
+        [
+          "言います",
+          "おっしゃいます"
+        ],
+        [
+          "見ます",
+          "ごらんになります"
+        ]
+      ]
+    },
+    "notes": [
+      "Không dùng 2 tầng kính ngữ trong 1 từ: ✕ お読まれになります ✕ おやめられになります。",
+      "Bảng động từ đặc biệt do Claude bổ sung."
+    ]
+  },
+  "49.6": {
+    "pattern": [
+      "お／ご V ます ＋ ですか"
+    ],
+    "explanations": [
+      "Cách hỏi tôn kính, lịch sự hơn V ますか."
+    ],
+    "examples": [
+      {
+        "ja": "お申し込みですか。",
+        "vi": "Anh chị đăng kí không ạ?"
+      },
+      {
+        "ja": "図書カードを お持ちですか。",
+        "vi": "Quý khách có mang theo thẻ thư viện không ạ?"
+      }
+    ]
+  },
+  "50.1": {
+    "examples": [
+      {
+        "ja": "社長に 会議の時間を お知らせします。",
+        "vi": "Tôi sẽ thông báo thời gian cuộc họp cho giám đốc."
+      }
+    ]
+  },
+  "50.2": {
+    "examples": [
+      {
+        "ja": "これから、東京を ご紹介します。",
+        "vi": "Sau đây tôi xin phép giới thiệu về Tokyo ạ."
+      }
+    ]
+  },
+  "50.3": {
+    "examples": [
+      {
+        "ja": "明日、朝の 9時に 参ります。",
+        "vi": "Tôi sẽ đến vào 9 giờ sáng mai."
+      },
+      {
+        "ja": "忙しいとは 存じておりますが、どうぞ お時間 ありましたら いらしてください。",
+        "vi": "Tôi biết anh/chị bận nhưng nếu có thời gian rảnh thì mời anh/chị đến nhà tôi chơi."
+      }
+    ]
+  }
+}
+
