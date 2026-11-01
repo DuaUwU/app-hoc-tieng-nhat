@@ -207,6 +207,9 @@ body.exam-focus .exam-prompt{font-size:clamp(22px,4vw,30px);margin:24px 0}
 .hero-body>p{color:var(--muted)}
 .today{padding:12px 14px;background:var(--sky-soft);box-shadow:var(--pxb);font-weight:600}
 
+/* Keep the level badge visible above the pixel hero styles. */
+.rank-line .lv{display:inline-flex;align-items:center;justify-content:center;min-height:30px;padding:2px 10px;background:var(--ink)!important;color:var(--sun)!important;font-size:15px;font-weight:800;letter-spacing:1px;line-height:1.2;position:relative;z-index:1;box-shadow:inset -3px -3px 0 rgba(255,255,255,.14)}
+
 /* ===== KOTOBA · PIXEL JAPAN THEME (8-bit, chữ KHÔNG pixel hóa) ===== */
 :root{
   --ink:#3b3150;--bg:#fff3e0;--paper:#fffaf0;--surface:#fffaf0;--shade:#efe0c2;
