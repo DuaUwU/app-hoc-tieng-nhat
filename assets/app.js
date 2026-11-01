@@ -55,7 +55,10 @@ function ensureCard(it){if(!state.cards[it.key])state.cards[it.key]={box:0,due:D
 function dueItems(type='all'){return allItems().filter(x=>(type==='all'||x.type===type)&&state.cards[x.key]&&state.cards[x.key].due<=Date.now())}
 function learnedCount(){return Object.values(state.cards).filter(x=>x.learned).length}
 function showPage(id){if(id==='vocab'||id==='kanji'){setDictionaryTab(id);id='dictionary'}if(id==='dictionary'){renderVocab();renderKanji();setDictionaryTab(document.getElementById('dictTabKanji').classList.contains('primary')?'kanji':'vocab')}document.querySelectorAll('.page').forEach(x=>x.classList.toggle('active',x.id==='page-'+id));document.querySelectorAll('[data-page]').forEach(x=>x.classList.toggle('active',x.dataset.page===id));const titles={home:['Tổng quan','Học một ít mỗi ngày.'],dictionary:['Từ điển','Tra cứu từ vựng và Kanji trong cùng một mục.'],grammar:['Ngữ pháp','Tra cứu mẫu câu và cách dùng.'],listen:['Luyện nghe','Luyện nhận diện âm thanh bằng giọng đọc tiếng Nhật.'],practice:['Luyện tập','Chọn dạng bài và nội dung muốn luyện.'],exam:['Giải đề','Hoàn thành câu bằng cách chọn đáp án đúng.'],stats:['Thống kê','Theo dõi quá trình học.']};$('pageTitle').textContent=titles[id][0];$('pageDesc').textContent=titles[id][1];if(id==='stats')renderStats();window.scrollTo(0,0)}
-function navigatePage(id){if(id==='exam'&&!$('examPlay').classList.contains('hidden'))return;if(!$('examPlay').classList.contains('hidden')&&id!=='exam'){ask('Thoát đề và bỏ kết quả lượt này?',()=>{examAbort();showPage(id)},'Thoát');return}showPage(id)}
+const routePages=new Set(['home','dictionary','grammar','practice','exam','review','stats']);
+function pageFromPath(){const name=location.pathname.split('/').pop().replace(/\.html$/,'');return routePages.has(name)?name:'home'}
+function navigatePage(id,fromHistory=false){if(!routePages.has(id))id='home';if(id==='exam'&&!$('examPlay').classList.contains('hidden'))return;if(!$('examPlay').classList.contains('hidden')&&id!=='exam'){ask('Thoát đề và bỏ kết quả lượt này?',()=>{examAbort();if(!fromHistory)history.pushState({page:id},'',id==='home'?'./':'./'+id+'.html');showPage(id)},'Thoát');return}if(!fromHistory){const target=id==='home'?'./':'./'+id+'.html';if(location.pathname!==new URL(target,location.href).pathname)history.pushState({page:id},'',target)}showPage(id)}
+window.addEventListener('popstate',()=>navigatePage(pageFromPath(),true));
 document.querySelectorAll('[data-page]').forEach(b=>b.addEventListener('click',()=>navigatePage(b.dataset.page)));document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>navigatePage(b.dataset.go)));
 function fillSelect(id,items,prefix){const el=$(id);items.forEach(x=>el.add(new Option(prefix+x,x)))}
 const lessons=[...new Set(VOCAB_DATA.map(x=>String(x.lesson)))].sort((a,b)=>+a-+b);const units=[...new Set(KANJI_DATA.map(x=>String(x.unit)))].sort((a,b)=>a.localeCompare(b,undefined,{numeric:true}));
@@ -298,5 +301,6 @@ $('examQuit').onclick=()=>ask('Thoát đề và bỏ kết quả lượt này?',
 $('examReviewToggle').onclick=()=>{const shown=!$('examReview').classList.contains('hidden');$('examReview').classList.toggle('hidden',shown);$('examReviewToggle').textContent=shown?'Xem đáp án':'Ẩn đáp án'};
 
 // Initial render
-setDictionaryTab('vocab');renderVocab();renderKanji();renderGrammar();renderReviewList();updateDashboard();
+setDictionaryTab('vocab');renderVocab();renderKanji();renderGrammar();renderReviewList();updateDashboard();showPage(pageFromPath());
 if('speechSynthesis'in window)speechSynthesis.getVoices();
+
