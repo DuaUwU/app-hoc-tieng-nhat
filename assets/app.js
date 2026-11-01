@@ -69,6 +69,20 @@ function setDictionaryTab(tab){const v=tab==='vocab';$('page-vocab').classList.t
 $('dictTabVocab').onclick=()=>setDictionaryTab('vocab');$('dictTabKanji').onclick=()=>setDictionaryTab('kanji');
 function renderMultiChecks(id,items,prefix){const el=$(id);el.innerHTML=items.map(v=>`<label><input type="checkbox" value="${esc(v)}" checked> ${esc(prefix+v)}</label>`).join('');el.querySelectorAll('input').forEach(c=>c.addEventListener('change',updateQuizFilters))}
 function checkedValues(id){return [...$(id).querySelectorAll('input[type=checkbox]:checked')].map(c=>c.value)}
+function countAvailableQuestions(){
+ const activity=$('quizActivity').value,mode=$('quizMode').value,lessonsSelected=checkedValues('quizLessonChecks'),unitsSelected=checkedValues('quizUnitChecks');
+ const vp=VOCAB_DATA.filter(x=>lessonsSelected.includes(String(x.lesson))&&x.meaning&&x.kana);
+ const kp=KANJI_DATA.filter(x=>unitsSelected.includes(String(x.unit))&&x.kanji&&(x.doc||x.hanViet));
+ let candidates=[];
+ if(activity==='listen')candidates=vp.map(item=>({type:'vocab',item,pool:vp}));
+ else if(activity==='fill'||activity==='order'){
+  const grammarPool=GRAMMAR.filter(x=>lessonsSelected.includes(String(x.lesson))).flatMap(g=>g.examples.filter(ex=>ex.ja&&ex.ja.trim().split(/\s+/).length>=3).map(ex=>({lesson:g.lesson,title:g.title,ja:ex.ja.trim(),vi:ex.vi||''})));
+  candidates=[...vp.filter(x=>String(x.kaiwa||'').trim().split(/\s+/).length>=3).map(item=>({type:'vocab',item,pool:vp})),...grammarPool.map(item=>({type:'grammar',item,pool:grammarPool}))];
+ }else if(mode==='vocab')candidates=vp.map(item=>({type:'vocab',item,pool:vp}));
+ else if(mode==='kanji')candidates=kp.map(item=>({type:'kanji',item,pool:kp}));
+ else candidates=[...vp.map(item=>({type:'vocab',item,pool:vp})),...kp.map(item=>({type:'kanji',item,pool:kp}))];
+ return candidates.reduce((total,c)=>{const q=makeQ(c.type,c.item,c.pool,activity);return total+(q&&q.answer&&(activity==='order'||(q.opts&&q.opts.length>=2))?1:0)},0);
+}
 function updateQuizFilters(){
  const mode=$('quizMode').value;
  const activity=$('quizActivity').value;
@@ -80,6 +94,10 @@ function updateQuizFilters(){
  document.querySelectorAll('[data-count]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.count===$('quizCount').value)));
  $('quizLessonCount').textContent=checkedValues('quizLessonChecks').length+' bài từ vựng đã chọn';
  $('quizUnitCount').textContent=checkedValues('quizUnitChecks').length+' Unit Kanji đã chọn';
+ const available=countAvailableQuestions(),requested=$('quizCount').value==='all'?Infinity:Number($('quizCount').value);
+ $('quizAvailableCount').textContent=available.toLocaleString('vi-VN')+' câu có thể tạo';
+ $('quizAvailableNote').textContent=!available?'Hãy chọn thêm bài hoặc đổi dạng luyện tập để có câu hỏi.':requested===Infinity?'Đề sẽ dùng toàn bộ câu phù hợp.':available<requested?`Bạn chọn ${requested} câu; đề sẽ có ${available} câu.`:`Đề sẽ có ${requested} câu.`;
+ $('quizStart').disabled=available===0;
 }
 document.querySelectorAll('[data-select]').forEach(b=>b.addEventListener('click',()=>{const root=$(b.dataset.select);root.querySelectorAll('input[type=checkbox]').forEach(c=>c.checked=true);updateQuizFilters()}));
 document.querySelectorAll('[data-clear]').forEach(b=>b.addEventListener('click',()=>{const root=$(b.dataset.clear);root.querySelectorAll('input[type=checkbox]').forEach(c=>c.checked=false);updateQuizFilters()}));
