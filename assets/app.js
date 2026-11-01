@@ -17,7 +17,7 @@ const EXAM_GRAMMAR = examData.grammar;
 const EXAM_KANJI = examData.kanji;
 const pageNames = ["home","dictionary","grammar","practice","exam","review","stats"];
 const pageMarkup = await Promise.all(pageNames.map(name =>
-  fetch('./pages/' + name + '.html?v=pixel-20261101b').then(readText)
+  fetch('./pages/' + name + '.html?v=pixel-20261101c').then(readText)
 ));
 document.getElementById('pageMount').innerHTML = pageMarkup.join('\n');
 /* Pixel interface details adapted to the split-page app. */
@@ -90,7 +90,25 @@ function fillSelect(id,items,prefix){const el=$(id);items.forEach(x=>el.add(new 
 const lessons=[...new Set(VOCAB_DATA.map(x=>String(x.lesson)))].sort((a,b)=>+a-+b);const units=[...new Set(KANJI_DATA.map(x=>String(x.unit)))].sort((a,b)=>a.localeCompare(b,undefined,{numeric:true}));
 fillSelect('vocabLesson',lessons,'Bài ');fillSelect('kanjiUnit',units,'Unit ');renderMultiChecks('quizLessonChecks',lessons,'Bài ');renderMultiChecks('quizUnitChecks',units,'Unit ');updateQuizFilters();for(let n=26;n<=50;n++)$('grammarLesson').add(new Option('Bài '+n,String(n)));
 $('statVocab').textContent=VOCAB_DATA.length.toLocaleString('vi-VN');$('statKanji').textContent=KANJI_DATA.length.toLocaleString('vi-VN');
-function updateDashboard(){const h=state.history,total=h.reduce((a,x)=>a+x.total,0),correct=h.reduce((a,x)=>a+x.correct,0);$('homeSessions').textContent=h.length;$('homeAnswers').textContent=total;$('homeAccuracy').textContent=total?Math.round(correct/total*100)+'%':'0%';$('todaySummary').textContent=h.length?`Lần luyện gần nhất: ${new Date(h[h.length-1].date).toLocaleString('vi-VN')}.`:'Chưa có lượt luyện nào.'}
+const DASH_RANKS=['Tân binh · 新兵','Học trò · 弟子','Chiến binh · 戦士','Samurai · 侍','Sensei · 先生','Thần Kanji · 漢神'];
+const XP_PER_LEVEL=60,DAILY_QUESTION_GOAL=20;
+function dashboardDayKey(value){const d=new Date(value);return `${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`}
+function updateDashboard(){
+ const h=state.history,total=h.reduce((a,x)=>a+(Number(x.total)||0),0),correct=h.reduce((a,x)=>a+(Number(x.correct)||0),0);
+ $('homeSessions').textContent=h.length;$('homeAnswers').textContent=total;$('homeAccuracy').textContent=total?Math.round(correct/total*100)+'%':'0%';
+ $('todaySummary').textContent=h.length?`Lần luyện gần nhất: ${new Date(h[h.length-1].date).toLocaleString('vi-VN')}.`:'Chưa có lượt luyện nào.';
+ const xp=h.reduce((sum,x)=>sum+(Number(x.correct)||0)*2+Math.max(0,(Number(x.total)||0)-(Number(x.correct)||0)),0);
+ const level=1+Math.floor(xp/XP_PER_LEVEL),levelXp=xp%XP_PER_LEVEL;
+ $('heroLv').textContent='LV '+level;$('heroRank').textContent=DASH_RANKS[Math.min(DASH_RANKS.length-1,Math.floor((level-1)/3))];
+ $('heroXpText').textContent=`${levelXp} / ${XP_PER_LEVEL} XP`;$('heroXpBar').style.width=(levelXp/XP_PER_LEVEL*100)+'%';
+ const dayKey=dashboardDayKey(Date.now()),todayTotal=h.filter(x=>dashboardDayKey(x.date)===dayKey).reduce((sum,x)=>sum+(Number(x.total)||0),0);
+ $('goalText').textContent=`${Math.min(todayTotal,DAILY_QUESTION_GOAL)} / ${DAILY_QUESTION_GOAL} câu`;$('goalBar').style.width=Math.min(100,todayTotal/DAILY_QUESTION_GOAL*100)+'%';
+ const activeDays=new Set(h.map(x=>dashboardDayKey(x.date)));let streak=0,cursor=new Date();cursor.setHours(0,0,0,0);
+ if(!activeDays.has(dashboardDayKey(cursor)))cursor.setDate(cursor.getDate()-1);
+ while(activeDays.has(dashboardDayKey(cursor))&&streak<365){streak++;cursor.setDate(cursor.getDate()-1)}
+ $('homeStreak').textContent=streak+' ngày';
+ $('mascotSay').textContent=!h.length?'Chào bạn! Làm bài đầu tiên nhé!':todayTotal>=DAILY_QUESTION_GOAL?'Xuất sắc! Đủ mục tiêu hôm nay rồi!':todayTotal>0?'Giỏi lắm! Còn '+(DAILY_QUESTION_GOAL-todayTotal)+' câu nữa thôi!':streak>0?'Giữ chuỗi '+streak+' ngày nào!':'Hôm nay học chút nhé!';
+}
 function setDictionaryTab(tab){const v=tab==='vocab';$('page-vocab').classList.toggle('hidden',!v);$('page-kanji').classList.toggle('hidden',v);$('dictTabVocab').classList.toggle('primary',v);$('dictTabKanji').classList.toggle('primary',!v)}
 $('dictTabVocab').onclick=()=>setDictionaryTab('vocab');$('dictTabKanji').onclick=()=>setDictionaryTab('kanji');
 function renderMultiChecks(id,items,prefix){const el=$(id);el.innerHTML=items.map(v=>`<label><input type="checkbox" value="${esc(v)}" checked> ${esc(prefix+v)}</label>`).join('');el.querySelectorAll('input').forEach(c=>c.addEventListener('change',updateQuizFilters))}
@@ -338,7 +356,7 @@ function examStart(){
 function examFinish(){
  clearInterval(examRun.timer);
  const total=examRun.qs.length,correct=examRun.answers.filter(x=>x&&x.correct).length,answered=examRun.answers.filter(Boolean).length,accuracy=total?Math.round(correct/total*100):0;
- state.history.push({date:Date.now(),total,correct,accuracy,mode:'exam'});state.history=state.history.slice(-100);persist();
+ state.history.push({date:Date.now(),total,correct,accuracy,mode:'exam'});state.history=state.history.slice(-100);persist();updateDashboard();
  $('examPlay').classList.add('hidden');$('examResult').classList.remove('hidden');document.body.classList.remove('exam-focus');$('examScore').textContent=`${correct} / ${total} · ${accuracy}%`;
  $('examSummary').textContent=`Đã trả lời ${answered}/${total} câu · Thời gian ${Math.floor((Date.now()-examRun.started)/60000)} phút. Kết quả đã được lưu vào thống kê.`;
  $('examReview').innerHTML='<h3>Đáp án và giải thích</h3>'+examRun.qs.map((q,i)=>{const a=examRun.answers[i];return `<div class="exam-review-row"><b>${i+1}. ${esc(q.section)}</b><p style="white-space:pre-line;margin:5px 0">${esc(q.prompt)}</p><p class="${a&&a.correct?'correct-answer':''}" style="margin:4px 0">Đáp án: <b>${esc(q.answer)}</b>${a?` · Bạn chọn: ${esc(a.selected)} ${a.correct?'✓':'✗'}`:' · Chưa trả lời'}</p><div class="meta">${esc(q.explain||'')}</div></div>`}).join('');
