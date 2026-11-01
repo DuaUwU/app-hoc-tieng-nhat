@@ -14,7 +14,8 @@ Sau đó mở http://localhost:8000. Cần dùng máy chủ HTTP để trình du
 
 ## Cấu trúc
 
-- `index.html`: khung trang
+- `index.html`: khung dùng chung và điều hướng
+- `pages/`: nội dung từng trang mini (tổng quan, từ điển, ngữ pháp, luyện tập, giải đề, thống kê)
 - `assets/styles.css`: giao diện
 - `assets/app.js`: hành vi ứng dụng
 - `data/kanji.json`: chữ Hán và danh sách unit

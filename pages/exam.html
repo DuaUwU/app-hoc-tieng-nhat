@@ -1,0 +1,32 @@
+<section class="page" id="page-exam">
+  <div class="exam-hero">
+    <h2>Giải đề giữa kỳ · N4</h2>
+    <p style="margin:0">Chọn đáp án đúng để hoàn thành câu.</p>
+    <div class="exam-meta"><span class="exam-section-tag">55 câu ngẫu nhiên</span><span class="exam-section-tag">70 phút tham khảo</span><span class="exam-section-tag">Ngữ pháp 26–50 · Kanji 36–50</span></div>
+    <button class="btn primary" id="examStart">Bắt đầu giải đề</button>
+  </div>
+  <div id="examSetup" class="card">
+    <h3 style="margin-top:0">Cấu trúc đề</h3>
+    <div class="list">
+      <div class="item"><div class="item-main"><b>1. Kanji / từ vựng</b><p class="meta">Điền từ thích hợp vào câu.</p></div><span class="pill">25 câu</span></div>
+      <div class="item"><div class="item-main"><b>2. Ngữ pháp</b><p class="meta">Chọn đáp án phù hợp để hoàn thành câu.</p></div><span class="pill">30 câu</span></div>
+      
+      
+    </div>
+  </div>
+  <div id="examPlay" class="hidden">
+    <div class="card exam-progress-head"><div><b id="examSectionName">Phần 1</b><div class="meta" id="examQuestionMeta">Câu 1</div></div><div><span class="timer" id="examTimer">70:00</span><div class="progress" style="width:160px;margin-top:6px"><i id="examProgressBar" style="width:0%"></i></div></div></div>
+    <article class="card exam-question">
+      <h3 id="examTypeLabel">KANJI</h3>
+      <div class="exam-prompt jp" id="examPrompt" tabindex="-1"></div>
+      <div id="examOptions" class="options"></div>
+      <div id="examFeedback" class="feedback hidden"></div>
+      <div class="toolbar" style="justify-content:space-between"><button class="btn" id="examQuit">Thoát đề</button><button class="btn primary" id="examNext" disabled>Câu tiếp theo →</button></div>
+    </article>
+  </div>
+  <div id="examResult" class="card hidden">
+    <h2 style="margin-top:0">Kết quả giải đề</h2><div class="exam-result-score" id="examScore"></div><p id="examSummary" class="meta"></p>
+    <div class="toolbar"><button class="btn primary" id="examRetry">Làm đề mới</button><button class="btn" id="examReviewToggle">Xem đáp án</button></div>
+    <div id="examReview" class="hidden"></div>
+  </div>
+</section>

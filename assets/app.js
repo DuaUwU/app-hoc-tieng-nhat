@@ -15,6 +15,15 @@ const VOCAB_DATA = vocabularyData.items;
 const GRAMMAR = grammarData;
 const EXAM_GRAMMAR = examData.grammar;
 const EXAM_KANJI = examData.kanji;
+const pageNames = ["home","dictionary","grammar","practice","exam","review","stats"];
+const pageMarkup = await Promise.all(pageNames.map(name =>
+  fetch('./pages/' + name + '.html').then(readText)
+));
+document.getElementById('pageMount').innerHTML = pageMarkup.join('\n');
+async function readText(response) {
+  if (!response.ok) throw new Error('Không tải được trang: ' + response.url);
+  return response.text();
+}
 /* ========================= STATE ========================= */
 let mode = 'kanji';
 let selectedUnits = new Set(UNITS.map(u=>u.code));
