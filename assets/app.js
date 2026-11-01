@@ -20,6 +20,32 @@ const pageMarkup = await Promise.all(pageNames.map(name =>
   fetch('./pages/' + name + '.html').then(readText)
 ));
 document.getElementById('pageMount').innerHTML = pageMarkup.join('\n');
+/* Pixel interface details adapted to the split-page app. */
+(() => {
+  const palette={k:'#3b3150',o:'#3b3150',e:'#3b3150',w:'#fffaf0',r:'#d9574a',p:'#f6aebd',n:'#e06b7e',y:'#f8d67c',g:'#6fae7b',b:'#6fb3d2',d:'#8a5a3c'};
+  const sprites={
+    cat:['..oo........oo..','.owwo......owwo.','.owpwoooooowpwo.','.owwwwwwwwwwwwo.','owwwwwwwwwwwwwwo','owwweewwwweewwwo','owwweewwwweewwwo','owppwwwwwwwwppwo','owwwwwwnnwwwwwwo','.owwwwwwwwwwwwo.','.owwwwwwwwwwwwo.','..oooooooooooo..','..oorrrrrrrroo..','...oyyyyyyyyo...','....oooooooo....'],
+    torii:['kkkkkkkkkkkkkkkk','.rrrrrrrrrrrrrr.','..rr........rr..','.rrrrrrrrrrrrrr.','..rr........rr..','..rr........rr..','..rr........rr..','..rr........rr..','..kk........kk..'],
+    home:['...rr...','..rrrr..','.rrrrrr.','rrrrrrrr','.wwwwww.','.wwddww.','.wwddww.','.wwddww.'],
+    book:['bbbbbbbb','bwwbwwwb','bwwbwwwb','bwwbwwwb','bwwbwwwb','bbbbbbbb','.kkkkkk.'],
+    scroll:['kkkkkkk.','kwwwwwk.','kwkkkwk.','kwwwwwk.','kwkkkwk.','kwwwwwk.','kkkkkkk.'],
+    pencil:['......kk','.....kyk','....kyk.','...kyk..','..kyk...','.kpk....','kpk.....','kk......'],
+    test:['kkkkkkk.','kwwwwwk.','kwwwwgk.','kgwwgwk.','kwgggwk.','kwwgwwk.','kwwwwwk.','kkkkkkk.'],
+    chart:['........','......bb','......bb','...gg.bb','...gg.bb','rr.gg.bb','rr.gg.bb','rr.gg.bb'],
+    flame:['...r....','..rr.r..','..rrrr..','.rryyrr.','.rryyrr.','.rryyyr.','..ryyr..','...rr...']
+  };
+  const svg=(name,px=4)=>{const rows=sprites[name];if(!rows)return '';let rects='';rows.forEach((row,y)=>[...row].forEach((c,x)=>{if(palette[c])rects+=`<rect x="${x}" y="${y}" width="1" height="1" fill="${palette[c]}"${c==='e'?' class="eye"':''}/>`}));return `<svg viewBox="0 0 ${rows[0].length} ${rows.length}" width="${rows[0].length*px}" height="${rows.length*px}" shape-rendering="crispEdges" aria-hidden="true">${rects}</svg>`};
+  const paint=root=>(root||document).querySelectorAll('[data-spr]').forEach(el=>{if(!el.firstChild)el.innerHTML=svg(el.dataset.spr,+el.dataset.px||4)});
+  const icons={home:'home',dictionary:'book',grammar:'scroll',practice:'pencil',exam:'test',stats:'chart'};
+  document.querySelectorAll('.nav button[data-page],.mobile-nav button[data-page]').forEach(button=>{const name=icons[button.dataset.page];if(name&&!button.querySelector('[data-spr]'))button.insertAdjacentHTML('afterbegin',`<span class="spr" data-spr="${name}" data-px="3"></span>`)});
+  document.querySelectorAll('.quick[data-go]').forEach(button=>{const name=button.dataset.go==='exam'?'test':button.dataset.go==='practice'?'pencil':'book';if(!button.querySelector('[data-spr]'))button.insertAdjacentHTML('afterbegin',`<span class="spr" data-spr="${name}" data-px="5"></span>`)});
+  const brand=document.querySelector('.brand');if(brand&&!brand.querySelector('[data-spr]'))brand.insertAdjacentHTML('afterbegin','<span class="spr" data-spr="torii" data-px="3"></span>');
+  const mobile=document.getElementById('mobileNav');if(mobile&&!mobile.querySelector('[data-page="grammar"]'))mobile.querySelector('[data-page="dictionary"]')?.insertAdjacentHTML('afterend','<button data-page="grammar"><span class="spr" data-spr="scroll" data-px="3"></span>Ngữ pháp</button>');
+  paint();
+  const decor=document.createDocumentFragment();[['c1',40],['c2',150],['c3',70]].forEach(([cls,top])=>{const cloud=document.createElement('div');cloud.className='cloud '+cls;cloud.style.top=top+'px';decor.append(cloud)});
+  for(let i=0;i<10;i++){const petal=document.createElement('div');petal.className='petal';petal.style.left=Math.random()*100+'vw';petal.style.animationDuration=9+Math.random()*9+'s';petal.style.animationDelay=-Math.random()*16+'s';petal.style.setProperty('--dx',Math.random()*160-40+'px');const size=7+Math.random()*6;petal.style.width=petal.style.height=size+'px';decor.append(petal)}
+  document.body.append(decor);
+})();
 async function readText(response) {
   if (!response.ok) throw new Error('Không tải được trang: ' + response.url);
   return response.text();
