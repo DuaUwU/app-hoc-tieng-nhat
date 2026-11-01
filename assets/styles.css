@@ -146,8 +146,17 @@ body.exam-focus .exam-question{margin-top:16px;min-height:55vh;padding:clamp(18p
 body.exam-focus .exam-prompt{font-size:clamp(22px,4vw,30px);margin:24px 0}
 @media(max-width:680px){.activity-picker{grid-template-columns:1fr}.activity-choice{min-height:58px}body.exam-focus .main{padding:10px 12px 100px}body.exam-focus .exam-question{min-height:60vh}body.exam-focus .exam-progress-head{padding:12px}}
 
-#quizSetup>.grid.two{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
-.quiz-activity-field{grid-column:1/-1}
+.practice-step{padding:18px 0;border-bottom:1px solid var(--line)}
+.practice-step-last{border-bottom:0;padding-bottom:0}
+.practice-step-title{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.practice-step-title>span{display:grid;place-items:center;flex:0 0 32px;height:32px;border-radius:50%;background:var(--accent-soft);color:var(--accent);font-weight:800}
+.practice-step-title b,.practice-step-title small{display:block}
+.practice-step-title small{margin-top:3px;color:var(--muted);font-size:12px}
+.practice-content-choice{margin-top:16px}
+.quiz-availability{display:flex;flex-direction:column;gap:4px;margin:14px 0;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--paper)}
+.quiz-availability b{color:var(--accent);font-size:16px}
+.quiz-availability span{color:var(--muted);font-size:13px}
+#quizStart:disabled{opacity:.55;cursor:not-allowed}
 .activity-picker{grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
 .activity-choice{min-height:58px;padding:9px 10px;text-align:center;align-items:center}
 .setting-button-group{display:flex;flex-wrap:wrap;gap:7px;margin-top:8px}
@@ -158,3 +167,4 @@ body.exam-focus .exam-prompt{font-size:clamp(22px,4vw,30px);margin:24px 0}
 .count-button-group .setting-choice{min-width:54px}
 @media(max-width:900px){.activity-picker{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:680px){#quizSetup>.grid.two{grid-template-columns:1fr}.activity-picker{grid-template-columns:repeat(2,minmax(0,1fr))}.activity-choice{min-height:60px}.setting-button-group{gap:6px}.setting-choice{min-width:60px;padding:8px 9px}}
+
