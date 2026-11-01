@@ -1,27 +1,31 @@
 <section class="page active" id="page-home">
-  <div class="hero">
-    <div class="hero-mascot"><div class="bubble" id="mascotSay">Chào bạn! Làm bài đầu tiên nhé!</div><span class="spr mascot" data-spr="cat" data-px="9"></span><div class="ground"></div></div>
-    <div class="hero-body">
-      <div class="rank-line"><span class="lv" id="heroLv">LV 1</span><b id="heroRank">Tân binh · 新兵</b></div>
-      <div class="meter-label"><span>Kinh nghiệm</span><b id="heroXpText">0 / 60 XP</b></div><div class="meter xp"><i id="heroXpBar" style="width:0%"></i></div>
-      <div class="meter-label"><span>Mục tiêu hôm nay</span><b id="goalText">0 / 20 câu</b></div><div class="meter goal"><i id="goalBar" style="width:0%"></i></div>
-      <button class="btn big" data-go="practice">Bắt đầu luyện tập <span class="arrow">▶</span></button>
-    </div>
+<div class="hero">
+  <div class="hero-mascot"><div class="bubble" id="mascotSay">Hôm nay học chút nhé!</div><span class="spr mascot" data-spr="cat" data-px="9"></span><div class="ground"></div></div>
+  <div class="hero-body">
+    <div class="rank-line"><span class="lv" id="heroLv">LV 1</span><b id="heroRank">Tân binh · 新兵</b></div>
+    <div class="meter-label"><span>Kinh nghiệm</span><b id="heroXpText">0 / 60 XP</b></div>
+    <div class="meter xp"><i id="heroXpBar" style="width:0%"></i></div>
+    <div class="meter-label"><span>Mục tiêu hôm nay</span><b id="goalText">0 / 20 câu</b></div>
+    <div class="meter goal"><i id="goalBar" style="width:0%"></i></div>
+    <button class="btn big" data-go="practice">Bắt đầu luyện tập <span class="arrow">▶</span></button>
   </div>
-  <div class="tiles">
-    <div class="tile"><span class="spr" data-spr="book" data-px="4"></span><div><small>Từ vựng</small><strong id="statVocab">—</strong></div></div>
-    <div class="tile"><span class="spr" data-spr="scroll" data-px="4"></span><div><small>Kanji</small><strong id="statKanji">—</strong></div></div>
-    <div class="tile"><span class="spr" data-spr="flame" data-px="4"></span><div><small>Chuỗi ngày học</small><strong id="homeStreak">0 ngày</strong></div></div>
-  </div>
-  <div class="section-head"><div><h2>Bắt đầu học</h2><p>Chọn một mục để tiếp tục.</p></div></div>
-  <div class="grid menu">
-    <button class="menu-tile" data-go="practice"><span class="spr" data-spr="pencil" data-px="5"></span><b>Luyện tập</b><small>Chọn dạng bài và bắt đầu học</small></button>
-    <button class="menu-tile" data-go="exam"><span class="spr" data-spr="test" data-px="5"></span><b>Giải đề giữa kỳ</b><small>Ngữ pháp và Kanji · 55 câu</small></button>
-    <button class="menu-tile" data-go="dictionary"><span class="spr" data-spr="book" data-px="5"></span><b>Từ điển</b><small>Từ vựng và Kanji</small></button>
-    <button class="menu-tile" data-go="grammar"><span class="spr" data-spr="scroll" data-px="5"></span><b>Ngữ pháp</b><small>Mẫu câu bài 26–50</small></button>
-    <button class="menu-tile" data-go="stats"><span class="spr" data-spr="chart" data-px="5"></span><b>Thống kê</b><small>Theo dõi tiến độ học</small></button>
-  </div>
-  <div class="section-head"><div><h2>Tiến độ luyện tập</h2></div></div>
-  <div class="grid stats-grid" style="grid-template-columns:repeat(2,minmax(0,1fr));margin-top:0"><div class="card stat"><small>Câu đã làm</small><strong id="homeAnswers">0</strong></div><div class="card stat"><small>Tỷ lệ đúng</small><strong id="homeAccuracy">0%</strong></div></div><p class="today" id="todaySummary">Chưa có lượt luyện nào.</p>
+</div>
+<div class="tiles">
+  <div class="tile"><span class="spr" data-spr="book" data-px="4"></span><div><small>Từ vựng</small><strong id="statVocab">—</strong></div></div>
+  <div class="tile"><span class="glyph">漢</span><div><small>Kanji</small><strong id="statKanji">—</strong></div></div>
+  <div class="tile"><span class="spr" data-spr="flame" data-px="4"></span><div><small>Chuỗi ngày học</small><strong id="homeStreak">0 ngày</strong></div></div>
+</div>
+<div class="section-head"><div><h2>Chọn hoạt động</h2></div></div>
+<div class="menu">
+  <button class="menu-tile" data-go="practice"><span class="spr" data-spr="pencil" data-px="5"></span><b>Luyện tập</b><small>6 dạng bài ngắn</small></button>
+  <button class="menu-tile" data-go="exam"><span class="spr" data-spr="test" data-px="5"></span><b>Giải đề giữa kỳ</b><small>Ngữ pháp + Kanji · 55 câu</small></button>
+  <button class="menu-tile" data-go="dictionary"><span class="spr" data-spr="book" data-px="5"></span><b>Từ điển</b><small>Từ vựng và Kanji</small></button>
+  <button class="menu-tile" data-go="grammar"><span class="spr" data-spr="scroll" data-px="5"></span><b>Ngữ pháp</b><small>Mẫu câu bài 26–50</small></button>
+  <button class="menu-tile" data-go="stats"><span class="spr" data-spr="chart" data-px="5"></span><b>Thống kê</b><small>Tiến độ học</small></button>
+  <button class="menu-tile" id="homeBackup"><span class="spr" data-spr="star" data-px="5"></span><b>Sao lưu</b><small>Xuất tiến độ ra JSON</small></button>
+</div>
+<div class="section-head"><div><h2>Tiến độ luyện tập</h2></div></div>
+<div class="grid stats-grid" style="grid-template-columns:repeat(3,minmax(0,1fr));margin-top:0"><div class="card stat"><small>Lượt luyện</small><strong id="homeSessions">0</strong></div><div class="card stat"><small>Câu đã làm</small><strong id="homeAnswers">0</strong></div><div class="card stat"><small>Tỷ lệ đúng</small><strong id="homeAccuracy">0%</strong></div></div>
+<div class="today"><span class="spr" data-spr="star" data-px="3"></span><span id="todaySummary">Chưa có lượt luyện nào.</span></div>
 </section>
 
