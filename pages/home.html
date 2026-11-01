@@ -1,12 +1,17 @@
 <section class="page active" id="page-home">
   <div class="hero">
-    <div class="hero-mascot"><div class="bubble">Hôm nay mình học một chút nhé!</div><span class="spr mascot" data-spr="cat" data-px="9"></span><div class="ground"></div></div>
-    <div class="hero-body"><div class="rank-line"><span class="lv">N4</span><b>Học đều mỗi ngày</b></div><p>Ôn từ vựng, Kanji và ngữ pháp theo nhịp của bạn.</p><button class="btn big" data-go="practice">Bắt đầu luyện tập <span class="arrow">▶</span></button></div>
+    <div class="hero-mascot"><div class="bubble" id="mascotSay">Chào bạn! Làm bài đầu tiên nhé!</div><span class="spr mascot" data-spr="cat" data-px="9"></span><div class="ground"></div></div>
+    <div class="hero-body">
+      <div class="rank-line"><span class="lv" id="heroLv">LV 1</span><b id="heroRank">Tân binh · 新兵</b></div>
+      <div class="meter-label"><span>Kinh nghiệm</span><b id="heroXpText">0 / 60 XP</b></div><div class="meter xp"><i id="heroXpBar" style="width:0%"></i></div>
+      <div class="meter-label"><span>Mục tiêu hôm nay</span><b id="goalText">0 / 20 câu</b></div><div class="meter goal"><i id="goalBar" style="width:0%"></i></div>
+      <button class="btn big" data-go="practice">Bắt đầu luyện tập <span class="arrow">▶</span></button>
+    </div>
   </div>
   <div class="tiles">
     <div class="tile"><span class="spr" data-spr="book" data-px="4"></span><div><small>Từ vựng</small><strong id="statVocab">—</strong></div></div>
     <div class="tile"><span class="spr" data-spr="scroll" data-px="4"></span><div><small>Kanji</small><strong id="statKanji">—</strong></div></div>
-    <div class="tile"><span class="spr" data-spr="flame" data-px="4"></span><div><small>Lượt luyện</small><strong id="homeSessions">0</strong></div></div>
+    <div class="tile"><span class="spr" data-spr="flame" data-px="4"></span><div><small>Chuỗi ngày học</small><strong id="homeStreak">0 ngày</strong></div></div>
   </div>
   <div class="section-head"><div><h2>Bắt đầu học</h2><p>Chọn một mục để tiếp tục.</p></div></div>
   <div class="grid menu">
