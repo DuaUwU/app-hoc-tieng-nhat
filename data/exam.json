@@ -1,0 +1,4254 @@
+{
+  "grammar": [
+    {
+      "section": "Ngữ pháp · Bài 26",
+      "prompt": "きょう、リーさんはうれしいですね。こいびとができた（　　　）。",
+      "opts": [
+        "んですか",
+        "ので",
+        "ながら",
+        "しか"
+      ],
+      "answer": "んですか",
+      "explain": "～んですか dùng để hỏi/xác nhận điều người nói nhận thấy."
+    },
+    {
+      "section": "Ngữ pháp · Bài 26",
+      "prompt": "先生、この漢字を読んで（　　　）。",
+      "opts": [
+        "いただけませんか",
+        "しまいました",
+        "おきます",
+        "みえます"
+      ],
+      "answer": "いただけませんか",
+      "explain": "Vていただけませんか là cách nhờ vả lịch sự."
+    },
+    {
+      "section": "Ngữ pháp · Bài 26",
+      "prompt": "どこで日本語を勉強し（　　　）いいですか。",
+      "opts": [
+        "たら",
+        "ながら",
+        "ても",
+        "ので"
+      ],
+      "answer": "たら",
+      "explain": "疑問詞＋Vたらいいですか: hỏi nên làm thế nào/ở đâu."
+    },
+    {
+      "section": "Ngữ pháp · Bài 27",
+      "prompt": "わたしは日本語（　　　）話せます。",
+      "opts": [
+        "が",
+        "を",
+        "へ",
+        "まで"
+      ],
+      "answer": "が",
+      "explain": "Ở câu thể khả năng, が thường thay を."
+    },
+    {
+      "section": "Ngữ pháp · Bài 27",
+      "prompt": "わたしは日本語（　　　）話せません。",
+      "opts": [
+        "しか",
+        "だけを",
+        "までに",
+        "ながら"
+      ],
+      "answer": "しか",
+      "explain": "Nしか～ません diễn tả chỉ có thể/ chỉ làm được…"
+    },
+    {
+      "section": "Ngữ pháp · Bài 27",
+      "prompt": "ここから海が（　　　）。",
+      "opts": [
+        "見えます",
+        "見ます",
+        "見せます",
+        "見らせます"
+      ],
+      "answer": "見えます",
+      "explain": "見えます diễn tả nhìn thấy một cách tự nhiên/khách quan."
+    },
+    {
+      "section": "Ngữ pháp · Bài 28",
+      "prompt": "マリアさんは働き（　　　）大学で勉強しています。",
+      "opts": [
+        "ながら",
+        "ので",
+        "ために",
+        "しか"
+      ],
+      "answer": "ながら",
+      "explain": "Vます bỏ ます + ながら: vừa… vừa…"
+    },
+    {
+      "section": "Ngữ pháp · Bài 28",
+      "prompt": "ハノイはにぎやか（　　　）、景色もきれいです。",
+      "opts": [
+        "だし",
+        "ので",
+        "ながら",
+        "しか"
+      ],
+      "answer": "だし",
+      "explain": "～し、～し dùng để liệt kê đặc điểm/lý do."
+    },
+    {
+      "section": "Ngữ pháp · Bài 29",
+      "prompt": "漢字をぜんぶ覚えて（　　　）。",
+      "opts": [
+        "しまいました",
+        "おきました",
+        "みえました",
+        "いただきました"
+      ],
+      "answer": "しまいました",
+      "explain": "Vてしまいました diễn tả hoàn tất hành động."
+    },
+    {
+      "section": "Ngữ pháp · Bài 29",
+      "prompt": "どこか（　　　）財布を落としたんです。",
+      "opts": [
+        "で",
+        "に",
+        "を",
+        "へ"
+      ],
+      "answer": "で",
+      "explain": "Địa điểm xảy ra hành động dùng で."
+    },
+    {
+      "section": "Ngữ pháp · Bài 30",
+      "prompt": "授業の前に、予習して（　　　）。",
+      "opts": [
+        "おきます",
+        "しまいます",
+        "みえます",
+        "いただきます"
+      ],
+      "answer": "おきます",
+      "explain": "Vておきます: làm trước để chuẩn bị."
+    },
+    {
+      "section": "Ngữ pháp · Bài 30",
+      "prompt": "かばんの中に本やノートが入れて（　　　）。",
+      "opts": [
+        "あります",
+        "います",
+        "しまいます",
+        "みます"
+      ],
+      "answer": "あります",
+      "explain": "Vてあります diễn tả trạng thái do ai đó thực hiện có chủ ý."
+    },
+    {
+      "section": "Ngữ pháp · Bài 31",
+      "prompt": "来週は映画館に行こう（　　　）。",
+      "opts": [
+        "と思っています",
+        "つもりでした",
+        "ながらです",
+        "しかありません"
+      ],
+      "answer": "と思っています",
+      "explain": "Ý định: ý hướng + と思っています."
+    },
+    {
+      "section": "Ngữ pháp · Bài 31",
+      "prompt": "来年の一月に結婚する（　　　）です。",
+      "opts": [
+        "予定",
+        "ながら",
+        "しか",
+        "ため"
+      ],
+      "answer": "予定",
+      "explain": "Vる/Nの予定です: dự định theo kế hoạch."
+    },
+    {
+      "section": "Ngữ pháp · Bài 32",
+      "prompt": "毎日、水をたくさん飲んだ（　　　）いいです。",
+      "opts": [
+        "ほうが",
+        "ながら",
+        "しか",
+        "ために"
+      ],
+      "answer": "ほうが",
+      "explain": "Vたほうがいい: nên làm gì."
+    },
+    {
+      "section": "Ngữ pháp · Bài 32",
+      "prompt": "週末、台風が来る（　　　）。",
+      "opts": [
+        "でしょう",
+        "ながら",
+        "ため",
+        "しか"
+      ],
+      "answer": "でしょう",
+      "explain": "でしょう diễn tả phỏng đoán."
+    },
+    {
+      "section": "Ngữ pháp · Bài 32",
+      "prompt": "今晩、雪が降る（　　　）しれません。",
+      "opts": [
+        "かも",
+        "ように",
+        "ため",
+        "しか"
+      ],
+      "answer": "かも",
+      "explain": "～かもしれません: có lẽ/có thể."
+    },
+    {
+      "section": "Ngữ pháp · Bài 33",
+      "prompt": "この漢字は「使用禁止」と（　　　）。",
+      "opts": [
+        "読みます",
+        "読ませます",
+        "読めます",
+        "読んであります"
+      ],
+      "answer": "読みます",
+      "explain": "～と読みます dùng để nói cách đọc."
+    },
+    {
+      "section": "Ngữ pháp · Bài 33",
+      "prompt": "このマークは「使うな」という（　　　）です。",
+      "opts": [
+        "意味",
+        "予定",
+        "場合",
+        "途中"
+      ],
+      "answer": "意味",
+      "explain": "～という意味です: có nghĩa là…"
+    },
+    {
+      "section": "Ngữ pháp · Bài 34",
+      "prompt": "私が言った（　　　）に、言ってください。",
+      "opts": [
+        "とおり",
+        "ばかり",
+        "ところ",
+        "はず"
+      ],
+      "answer": "とおり",
+      "explain": "Vる/Vた/Nのとおりに: làm theo như…"
+    },
+    {
+      "section": "Ngữ pháp · Bài 34",
+      "prompt": "サッカーをした（　　　）、シャワーを浴びます。",
+      "opts": [
+        "あとで",
+        "ながら",
+        "ために",
+        "しか"
+      ],
+      "answer": "あとで",
+      "explain": "Vたあとで: sau khi làm…"
+    },
+    {
+      "section": "Ngữ pháp · Bài 35",
+      "prompt": "レバーを引け（　　　）、ドアが開きます。",
+      "opts": [
+        "ば",
+        "たら",
+        "ながら",
+        "ので"
+      ],
+      "answer": "ば",
+      "explain": "Điều kiện thể ば: Vば、…"
+    },
+    {
+      "section": "Ngữ pháp · Bài 35",
+      "prompt": "北海道へ行きたいんですが。— 北海道（　　　）、六月がいいですよ。",
+      "opts": [
+        "なら",
+        "しか",
+        "ながら",
+        "ので"
+      ],
+      "answer": "なら",
+      "explain": "Nなら: nếu nói đến N thì…"
+    },
+    {
+      "section": "Ngữ pháp · Bài 36",
+      "prompt": "日本へ旅行に行ける（　　　）、毎日貯金しています。",
+      "opts": [
+        "ように",
+        "ため",
+        "ながら",
+        "しか"
+      ],
+      "answer": "ように",
+      "explain": "Vる/可能形＋ように: hướng đến kết quả/mục tiêu."
+    },
+    {
+      "section": "Ngữ pháp · Bài 36",
+      "prompt": "最近、納豆が食べられる（　　　）なりました。",
+      "opts": [
+        "ように",
+        "ために",
+        "ので",
+        "しか"
+      ],
+      "answer": "ように",
+      "explain": "～ようになりました diễn tả sự thay đổi khả năng/thói quen."
+    },
+    {
+      "section": "Ngữ pháp · Bài 37",
+      "prompt": "私は部長（　　　）頼まれました。",
+      "opts": [
+        "に",
+        "を",
+        "で",
+        "へ"
+      ],
+      "answer": "に",
+      "explain": "Câu bị động: người thực hiện hành động đi với に."
+    },
+    {
+      "section": "Ngữ pháp · Bài 37",
+      "prompt": "石油は船で運ばれ（　　　）。",
+      "opts": [
+        "ます",
+        "ましたを",
+        "ながら",
+        "しか"
+      ],
+      "answer": "ます",
+      "explain": "Thể bị động: 運ぶ→運ばれます."
+    },
+    {
+      "section": "Ngữ pháp · Bài 38",
+      "prompt": "肉を買う（　　　）忘れました。",
+      "opts": [
+        "のを",
+        "のが",
+        "ので",
+        "のに"
+      ],
+      "answer": "のを",
+      "explain": "Vるのを忘れました: quên làm việc gì."
+    },
+    {
+      "section": "Ngữ pháp · Bài 38",
+      "prompt": "子どもを育てる（　　　）は大変です。",
+      "opts": [
+        "の",
+        "ので",
+        "しか",
+        "ながら"
+      ],
+      "answer": "の",
+      "explain": "Vるのは…: danh từ hóa hành động làm chủ đề."
+    },
+    {
+      "section": "Ngữ pháp · Bài 39",
+      "prompt": "バスが遅く来た（　　　）、学校に遅れました。",
+      "opts": [
+        "ので",
+        "ながら",
+        "しか",
+        "ため"
+      ],
+      "answer": "ので",
+      "explain": "普通形＋ので nêu nguyên nhân."
+    },
+    {
+      "section": "Ngữ pháp · Bài 39",
+      "prompt": "交通事故（　　　）、けがをしてしまいました。",
+      "opts": [
+        "で",
+        "に",
+        "を",
+        "へ"
+      ],
+      "answer": "で",
+      "explain": "Nで có thể chỉ nguyên nhân/sự việc gây ra."
+    },
+    {
+      "section": "Ngữ pháp · Bài 40",
+      "prompt": "いつレポートを出さなければならない（　　　）、社長に聞きます。",
+      "opts": [
+        "か",
+        "ので",
+        "ながら",
+        "しか"
+      ],
+      "answer": "か",
+      "explain": "Câu hỏi gián tiếp: ～か、～."
+    },
+    {
+      "section": "Ngữ pháp · Bài 40",
+      "prompt": "電気を消したか（　　　）、覚えていません。",
+      "opts": [
+        "どうか",
+        "ながら",
+        "ために",
+        "しか"
+      ],
+      "answer": "どうか",
+      "explain": "～かどうか: có… hay không."
+    },
+    {
+      "section": "Ngữ pháp · Bài 41",
+      "prompt": "私は田中先生に辞書を（　　　）。",
+      "opts": [
+        "いただきました",
+        "やりました",
+        "くださいました",
+        "もらわれました"
+      ],
+      "answer": "いただきました",
+      "explain": "いただく là cách khiêm nhường của もらう."
+    },
+    {
+      "section": "Ngữ pháp · Bài 41",
+      "prompt": "田中先生は私に新しいテレビを（　　　）。",
+      "opts": [
+        "くださいました",
+        "いただきました",
+        "やりました",
+        "もらいました"
+      ],
+      "answer": "くださいました",
+      "explain": "くださる là cách tôn kính của くれる."
+    },
+    {
+      "section": "Ngữ pháp · Bài 42",
+      "prompt": "健康の（　　　）、毎日野菜を食べています。",
+      "opts": [
+        "ために",
+        "ながら",
+        "しか",
+        "のに"
+      ],
+      "answer": "ために",
+      "explain": "Nのために: vì/mục đích…"
+    },
+    {
+      "section": "Ngữ pháp · Bài 43",
+      "prompt": "今にも雨が降り（　　　）です。",
+      "opts": [
+        "そう",
+        "よう",
+        "ため",
+        "しか"
+      ],
+      "answer": "そう",
+      "explain": "Vます bỏ ます + そうです: trông có vẻ sắp…"
+    },
+    {
+      "section": "Ngữ pháp · Bài 43",
+      "prompt": "道を聞い（　　　）きます。",
+      "opts": [
+        "て",
+        "た",
+        "ながら",
+        "ので"
+      ],
+      "answer": "て",
+      "explain": "Vてきます: đi làm việc gì rồi quay lại."
+    },
+    {
+      "section": "Ngữ pháp · Bài 44",
+      "prompt": "今日のテストは難し（　　　）。",
+      "opts": [
+        "すぎました",
+        "やすかった",
+        "そうでしたを",
+        "ためでした"
+      ],
+      "answer": "すぎました",
+      "explain": "Aい bỏ い + すぎる: quá mức."
+    },
+    {
+      "section": "Ngữ pháp · Bài 44",
+      "prompt": "この薬は甘くて、飲み（　　　）です。",
+      "opts": [
+        "やすい",
+        "すぎる",
+        "ばかり",
+        "はず"
+      ],
+      "answer": "やすい",
+      "explain": "Vます bỏ ます + やすい: dễ làm."
+    },
+    {
+      "section": "Ngữ pháp · Bài 45",
+      "prompt": "地震の（　　　）は、火を消してください。",
+      "opts": [
+        "場合",
+        "ところ",
+        "ばかり",
+        "はず"
+      ],
+      "answer": "場合",
+      "explain": "Nの場合は: trong trường hợp…"
+    },
+    {
+      "section": "Ngữ pháp · Bài 45",
+      "prompt": "約束をした（　　　）、彼女は来ませんでした。",
+      "opts": [
+        "のに",
+        "ので",
+        "ながら",
+        "ために"
+      ],
+      "answer": "のに",
+      "explain": "～のに diễn tả sự trái với mong đợi."
+    },
+    {
+      "section": "Ngữ pháp · Bài 46",
+      "prompt": "いいえ、今から片付ける（　　　）です。",
+      "opts": [
+        "ところ",
+        "ばかり",
+        "はず",
+        "場合"
+      ],
+      "answer": "ところ",
+      "explain": "Vるところ: chuẩn bị bắt đầu làm."
+    },
+    {
+      "section": "Ngữ pháp · Bài 46",
+      "prompt": "去年、結婚した（　　　）です。",
+      "opts": [
+        "ばかり",
+        "ところ",
+        "場合",
+        "はず"
+      ],
+      "answer": "ばかり",
+      "explain": "Vたばかり: vừa mới làm."
+    },
+    {
+      "section": "Ngữ pháp · Bài 46",
+      "prompt": "天気予報を見ましたから、今晩、雨が降る（　　　）です。",
+      "opts": [
+        "はず",
+        "ところ",
+        "ばかり",
+        "場合"
+      ],
+      "answer": "はず",
+      "explain": "～はずです: dự đoán có căn cứ."
+    },
+    {
+      "section": "Ngữ pháp · Bài 47",
+      "prompt": "母の手紙によると、父は病気をしている（　　　）。",
+      "opts": [
+        "そうです",
+        "ようにします",
+        "ためです",
+        "しかありません"
+      ],
+      "answer": "そうです",
+      "explain": "Nghe thông tin từ người khác: câu thường + そうです."
+    },
+    {
+      "section": "Ngữ pháp · Bài 47",
+      "prompt": "ナムさんは本が好きな（　　　）。",
+      "opts": [
+        "ようです",
+        "そうにします",
+        "ためです",
+        "しかです"
+      ],
+      "answer": "ようです",
+      "explain": "～ようです dùng để suy đoán dựa trên dấu hiệu."
+    },
+    {
+      "section": "Ngữ pháp · Bài 47",
+      "prompt": "にぎやかな声（　　　）しますね。",
+      "opts": [
+        "が",
+        "を",
+        "へ",
+        "まで"
+      ],
+      "answer": "が",
+      "explain": "Nがします diễn tả cảm giác nghe/ngửi/nếm thấy."
+    },
+    {
+      "section": "Ngữ pháp · Bài 48",
+      "prompt": "大学に合格したので、両親を喜ばせ（　　　）。",
+      "opts": [
+        "ました",
+        "られました",
+        "てあります",
+        "ながら"
+      ],
+      "answer": "ました",
+      "explain": "使役形: 喜ぶ→喜ばせる."
+    },
+    {
+      "section": "Ngữ pháp · Bài 48",
+      "prompt": "母は私に野菜をたくさん食べ（　　　）。",
+      "opts": [
+        "させました",
+        "られました",
+        "てあります",
+        "そうでした"
+      ],
+      "answer": "させました",
+      "explain": "使役: người khiến ai làm gì; 食べる→食べさせる."
+    },
+    {
+      "section": "Ngữ pháp · Bài 49",
+      "prompt": "部長はどのくらい会社にお勤め（　　　）か。",
+      "opts": [
+        "になりました",
+        "いただきました",
+        "やりました",
+        "しましたを"
+      ],
+      "answer": "になりました",
+      "explain": "尊敬語: お＋ます-stem＋になります."
+    },
+    {
+      "section": "Ngữ pháp · Bài 49",
+      "prompt": "こちらにお名前をお書き（　　　）。",
+      "opts": [
+        "ください",
+        "いただきます",
+        "やります",
+        "しまいます"
+      ],
+      "answer": "ください",
+      "explain": "お～ください là cách nói tôn kính, lịch sự."
+    },
+    {
+      "section": "Ngữ pháp · Bài 50",
+      "prompt": "明日、朝の九時に（　　　）。",
+      "opts": [
+        "参ります",
+        "いらっしゃいます",
+        "おっしゃいます",
+        "くださいます"
+      ],
+      "answer": "参ります",
+      "explain": "参ります là khiêm nhường ngữ của 行きます/来ます."
+    }
+  ],
+  "kanji": [
+    {
+      "section": "Kanji · Unit 36A",
+      "prompt": "（　　　）の旅行",
+      "opts": [
+        "船",
+        "米",
+        "祖母",
+        "家賃"
+      ],
+      "answer": "船",
+      "explain": "船（ふね）— thuyền"
+    },
+    {
+      "section": "Kanji · Unit 36A",
+      "prompt": "外国の（　　　）に乗る",
+      "opts": [
+        "船",
+        "卵",
+        "初めに",
+        "娘"
+      ],
+      "answer": "船",
+      "explain": "船（ふね）— thuyền"
+    },
+    {
+      "section": "Kanji · Unit 36A",
+      "prompt": "夏休みの（　　　）を書く",
+      "opts": [
+        "日記",
+        "若い",
+        "息子",
+        "田中様"
+      ],
+      "answer": "日記",
+      "explain": "日記（にっき）— nhật ký"
+    },
+    {
+      "section": "Kanji · Unit 36A",
+      "prompt": "（　　　）が好きだ",
+      "opts": [
+        "水泳",
+        "確かめます",
+        "心",
+        "散歩"
+      ],
+      "answer": "水泳",
+      "explain": "水泳（すいえい）— bơi lội"
+    },
+    {
+      "section": "Kanji · Unit 36A",
+      "prompt": "（　　　）は漢字がぜんぜんわからなかった",
+      "opts": [
+        "初め",
+        "絵",
+        "発音",
+        "お見舞い"
+      ],
+      "answer": "初め",
+      "explain": "初め（はじ）— ban đầu"
+    },
+    {
+      "section": "Kanji · Unit 36A",
+      "prompt": "毎日1時間、（　　　）をしています。",
+      "opts": [
+        "水泳",
+        "海岸",
+        "お祝い",
+        "田中様"
+      ],
+      "answer": "水泳",
+      "explain": "水泳（すいえい）— bơi lội"
+    },
+    {
+      "section": "Kanji · Unit 36A",
+      "prompt": "英語が覚えられるように、英語で（　　　）を書いたほうがいいです",
+      "opts": [
+        "日記",
+        "合う",
+        "家賃",
+        "笑います"
+      ],
+      "answer": "日記",
+      "explain": "日記（にっき）— nhật ký"
+    },
+    {
+      "section": "Kanji · Unit 36A",
+      "prompt": "あの島まで橋ができました。昔は（　　　）で渡っていましたが、今は車で渡れるようになりました。",
+      "opts": [
+        "船",
+        "祖母",
+        "散歩",
+        "娘"
+      ],
+      "answer": "船",
+      "explain": "船（ふね）— thuyền"
+    },
+    {
+      "section": "Kanji · Unit 36A",
+      "prompt": "（　　　）は漢字がぜんぜんわかりませんでしたが、今はたくさん読める ようになりました。",
+      "opts": [
+        "初め",
+        "事務所",
+        "汚い",
+        "実験"
+      ],
+      "answer": "初め",
+      "explain": "初め（はじ）— ban đầu"
+    },
+    {
+      "section": "Kanji · Unit 36A",
+      "prompt": "ショパンの（　　　）がひけるようになりました。",
+      "opts": [
+        "曲",
+        "お宅",
+        "お目にかかります",
+        "辞書"
+      ],
+      "answer": "曲",
+      "explain": "曲（きょく）— Ca khúc, bản nhạc"
+    },
+    {
+      "section": "Kanji · Unit 36A",
+      "prompt": "こどもの（　　　）がわかりません",
+      "opts": [
+        "気持ち",
+        "自由に",
+        "点",
+        "原因"
+      ],
+      "answer": "気持ち",
+      "explain": "気持ち（きも）— Tâm trạng, cảm giác"
+    },
+    {
+      "section": "Kanji · Unit 36B",
+      "prompt": "新しい（　　　）",
+      "opts": [
+        "野菜",
+        "給料",
+        "係員",
+        "皆さん"
+      ],
+      "answer": "野菜",
+      "explain": "野菜（やさい）— rau"
+    },
+    {
+      "section": "Kanji · Unit 36B",
+      "prompt": "（　　　）の料理",
+      "opts": [
+        "野菜",
+        "交通",
+        "靴下",
+        "忘年会"
+      ],
+      "answer": "野菜",
+      "explain": "野菜（やさい）— rau"
+    },
+    {
+      "section": "Kanji · Unit 36B",
+      "prompt": "（　　　）ジュース",
+      "opts": [
+        "野菜",
+        "結婚式",
+        "生徒",
+        "村"
+      ],
+      "answer": "野菜",
+      "explain": "野菜（やさい）— rau"
+    },
+    {
+      "section": "Kanji · Unit 36B",
+      "prompt": "（　　　）な日",
+      "opts": [
+        "特別",
+        "法律",
+        "家賃",
+        "交通"
+      ],
+      "answer": "特別",
+      "explain": "特別（とくべつ）— đặc biệt"
+    },
+    {
+      "section": "Kanji · Unit 36B",
+      "prompt": "（　　　）な人",
+      "opts": [
+        "特別",
+        "祖母",
+        "二次会",
+        "風"
+      ],
+      "answer": "特別",
+      "explain": "特別（とくべつ）— đặc biệt"
+    },
+    {
+      "section": "Kanji · Unit 36B",
+      "prompt": "（　　　）な料理",
+      "opts": [
+        "特別",
+        "複雑",
+        "準備",
+        "工場"
+      ],
+      "answer": "特別",
+      "explain": "特別（とくべつ）— đặc biệt"
+    },
+    {
+      "section": "Kanji · Unit 36B",
+      "prompt": "（　　　）連絡する",
+      "opts": [
+        "必ず",
+        "靴",
+        "初めに",
+        "祖父"
+      ],
+      "answer": "必ず",
+      "explain": "必ず（かなら）— nhất định"
+    },
+    {
+      "section": "Kanji · Unit 36B",
+      "prompt": "もっと（　　　）を食べるようにしてください。",
+      "opts": [
+        "野菜",
+        "変える",
+        "曲",
+        "息子"
+      ],
+      "answer": "野菜",
+      "explain": "野菜（やさい）— rau"
+    },
+    {
+      "section": "Kanji · Unit 36B",
+      "prompt": "昔、日本でバナナは（　　　）な食べ物でしたが、今はいつでも食べられるようになりました。",
+      "opts": [
+        "特別",
+        "皆さん",
+        "祭り",
+        "参ります"
+      ],
+      "answer": "特別",
+      "explain": "特別（とくべつ）— đặc biệt"
+    },
+    {
+      "section": "Kanji · Unit 36B",
+      "prompt": "休むときは（　　　）連絡するようにしてください。",
+      "opts": [
+        "必ず",
+        "出発する",
+        "変える",
+        "辞書"
+      ],
+      "answer": "必ず",
+      "explain": "必ず（かなら）— nhất định"
+    },
+    {
+      "section": "Kanji · Unit 37A",
+      "prompt": "花の（　　　）",
+      "opts": [
+        "絵",
+        "拝見します",
+        "参加",
+        "以下"
+      ],
+      "answer": "絵",
+      "explain": "絵（え）— bức tranh"
+    },
+    {
+      "section": "Kanji · Unit 37A",
+      "prompt": "魚の（　　　）",
+      "opts": [
+        "絵",
+        "奥様",
+        "柔道",
+        "火事"
+      ],
+      "answer": "絵",
+      "explain": "絵（え）— bức tranh"
+    },
+    {
+      "section": "Kanji · Unit 37A",
+      "prompt": "動物の（　　　）をかく",
+      "opts": [
+        "絵",
+        "到着します",
+        "庭",
+        "実験"
+      ],
+      "answer": "絵",
+      "explain": "絵（え）— bức tranh"
+    },
+    {
+      "section": "Kanji · Unit 37A",
+      "prompt": "古い（　　　）",
+      "opts": [
+        "お寺",
+        "途中で",
+        "原料",
+        "靴下"
+      ],
+      "answer": "お寺",
+      "explain": "お寺（てら）— chùa"
+    },
+    {
+      "section": "Kanji · Unit 37A",
+      "prompt": "（　　　）と神社",
+      "opts": [
+        "お寺",
+        "必ず",
+        "石油",
+        "速い"
+      ],
+      "answer": "お寺",
+      "explain": "お寺（てら）— chùa"
+    },
+    {
+      "section": "Kanji · Unit 37A",
+      "prompt": "（　　　）を建てる",
+      "opts": [
+        "お寺",
+        "船",
+        "本物",
+        "文化"
+      ],
+      "answer": "お寺",
+      "explain": "お寺（てら）— chùa"
+    },
+    {
+      "section": "Kanji · Unit 37A",
+      "prompt": "（　　　）に買い物を頼む",
+      "opts": [
+        "娘",
+        "発表",
+        "給料",
+        "祖母"
+      ],
+      "answer": "娘",
+      "explain": "娘（むすめ）— con gái (mình)"
+    },
+    {
+      "section": "Kanji · Unit 37A",
+      "prompt": "かべに（　　　）がかけてあります。",
+      "opts": [
+        "絵",
+        "参ります",
+        "太い",
+        "両親"
+      ],
+      "answer": "絵",
+      "explain": "絵（え）— bức tranh"
+    },
+    {
+      "section": "Kanji · Unit 37A",
+      "prompt": "この（　　　）は千年前に建てられました。",
+      "opts": [
+        "お寺",
+        "準備",
+        "緑",
+        "お見舞い"
+      ],
+      "answer": "お寺",
+      "explain": "お寺（てら）— chùa"
+    },
+    {
+      "section": "Kanji · Unit 37A",
+      "prompt": "友達の（　　　）に招待されました。",
+      "opts": [
+        "結婚式",
+        "薬",
+        "資料",
+        "表"
+      ],
+      "answer": "結婚式",
+      "explain": "結婚式（けっこんしき）— Lễ kết hôn"
+    },
+    {
+      "section": "Kanji · Unit 37B",
+      "prompt": "小さい（　　　）",
+      "opts": [
+        "池",
+        "首",
+        "奥様",
+        "伺います"
+      ],
+      "answer": "池",
+      "explain": "池（いけ）— cái ao"
+    },
+    {
+      "section": "Kanji · Unit 37B",
+      "prompt": "（　　　）の庭に池がある",
+      "opts": [
+        "お寺",
+        "原料",
+        "初め",
+        "緑"
+      ],
+      "answer": "お寺",
+      "explain": "お寺（てら）— chùa"
+    },
+    {
+      "section": "Kanji · Unit 37B",
+      "prompt": "お寺の庭に（　　　）がある",
+      "opts": [
+        "池",
+        "到着します",
+        "文化",
+        "卵"
+      ],
+      "answer": "池",
+      "explain": "池（いけ）— cái ao"
+    },
+    {
+      "section": "Kanji · Unit 37B",
+      "prompt": "お寺の（　　　）に池がある",
+      "opts": [
+        "庭",
+        "彼",
+        "祖母",
+        "米"
+      ],
+      "answer": "庭",
+      "explain": "庭（にわ）— vườn"
+    },
+    {
+      "section": "Kanji · Unit 37B",
+      "prompt": "船で（　　　）を運ぶ",
+      "opts": [
+        "石油",
+        "工場",
+        "方法",
+        "天気予報"
+      ],
+      "answer": "石油",
+      "explain": "石油（せきゆ）— dầu mỏ"
+    },
+    {
+      "section": "Kanji · Unit 37B",
+      "prompt": "（　　　）で石油を運ぶ",
+      "opts": [
+        "船",
+        "文化",
+        "妻",
+        "以下"
+      ],
+      "answer": "船",
+      "explain": "船（ふね）— thuyền"
+    },
+    {
+      "section": "Kanji · Unit 37B",
+      "prompt": "ビールの（　　　）",
+      "opts": [
+        "原料",
+        "金",
+        "靴下",
+        "以下"
+      ],
+      "answer": "原料",
+      "explain": "原料（げんりょう）— nguyên liệu"
+    },
+    {
+      "section": "Kanji · Unit 37B",
+      "prompt": "（　　　）を輸入する",
+      "opts": [
+        "原料",
+        "祭り",
+        "汚い",
+        "卵"
+      ],
+      "answer": "原料",
+      "explain": "原料（げんりょう）— nguyên liệu"
+    },
+    {
+      "section": "Kanji · Unit 37B",
+      "prompt": "（　　　）の 周りに 木が うえてあります。",
+      "opts": [
+        "池",
+        "値段",
+        "案内します",
+        "優しい"
+      ],
+      "answer": "池",
+      "explain": "池（いけ）— cái ao"
+    },
+    {
+      "section": "Kanji · Unit 37B",
+      "prompt": "パンの （　　　）は アメリカから輸入されています。",
+      "opts": [
+        "原料",
+        "宿題",
+        "海岸",
+        "両手"
+      ],
+      "answer": "原料",
+      "explain": "原料（げんりょう）— nguyên liệu"
+    },
+    {
+      "section": "Kanji · Unit 37B",
+      "prompt": "サウジアラビアなどから （　　　）が輸入されています。",
+      "opts": [
+        "石油",
+        "実験",
+        "暑い",
+        "お見舞い"
+      ],
+      "answer": "石油",
+      "explain": "石油（せきゆ）— dầu mỏ"
+    },
+    {
+      "section": "Kanji · Unit 37B",
+      "prompt": "金閣寺には（　　　）の金が使われています。",
+      "opts": [
+        "本物",
+        "空気",
+        "科学",
+        "池"
+      ],
+      "answer": "本物",
+      "explain": "本物（ほんもの）— Đồ thật, vật thật"
+    },
+    {
+      "section": "Kanji · Unit 37B",
+      "prompt": "（　　　）閣寺には本物の金が使われています。",
+      "opts": [
+        "金",
+        "絵",
+        "出発する",
+        "風"
+      ],
+      "answer": "金",
+      "explain": "金（きん）— Vàng"
+    },
+    {
+      "section": "Kanji · Unit 38A",
+      "prompt": "（　　　）を買う",
+      "opts": [
+        "卵",
+        "祖父",
+        "辞書",
+        "祖母"
+      ],
+      "answer": "卵",
+      "explain": "卵（たまご）— trứng"
+    },
+    {
+      "section": "Kanji · Unit 38A",
+      "prompt": "町と（　　　）",
+      "opts": [
+        "村",
+        "育てる",
+        "文法",
+        "太い"
+      ],
+      "answer": "村",
+      "explain": "村（むら）— làng"
+    },
+    {
+      "section": "Kanji · Unit 38A",
+      "prompt": "朝の（　　　）",
+      "opts": [
+        "海岸",
+        "水泳",
+        "皆さん",
+        "初めに"
+      ],
+      "answer": "海岸",
+      "explain": "海岸（かいがん）— bờ biển"
+    },
+    {
+      "section": "Kanji · Unit 38A",
+      "prompt": "自動車（　　　）",
+      "opts": [
+        "工場",
+        "寒い",
+        "祖母",
+        "緑"
+      ],
+      "answer": "工場",
+      "explain": "工場（こうじょう）— nhà máy"
+    },
+    {
+      "section": "Kanji · Unit 38A",
+      "prompt": "習慣を（　　　）",
+      "opts": [
+        "変える",
+        "村",
+        "彼",
+        "狭い"
+      ],
+      "answer": "変える",
+      "explain": "変える（か）— Đổi, thay đổi"
+    },
+    {
+      "section": "Kanji · Unit 38B",
+      "prompt": "（　　　）をする",
+      "opts": [
+        "無理",
+        "お寺",
+        "息子",
+        "準備"
+      ],
+      "answer": "無理",
+      "explain": "無理（むり）— vô lý, quá sức"
+    },
+    {
+      "section": "Kanji · Unit 38B",
+      "prompt": "（　　　）問題",
+      "opts": [
+        "難しい",
+        "野菜",
+        "実験",
+        "水泳"
+      ],
+      "answer": "難しい",
+      "explain": "難しい（むずか）— khó"
+    },
+    {
+      "section": "Kanji · Unit 38B",
+      "prompt": "歩くのが（　　　）",
+      "opts": [
+        "速い",
+        "文法",
+        "法律",
+        "祖父"
+      ],
+      "answer": "速い",
+      "explain": "速い（はや）— nhanh"
+    },
+    {
+      "section": "Kanji · Unit 38B",
+      "prompt": "花を（　　　）",
+      "opts": [
+        "育てる",
+        "さ来月",
+        "確かめます",
+        "発表会"
+      ],
+      "answer": "育てる",
+      "explain": "育てる（そだ）— nuôi dưỡng, trồng, chăm sóc"
+    },
+    {
+      "section": "Kanji · Unit 38B",
+      "prompt": "（　　　）を散歩する",
+      "opts": [
+        "海岸",
+        "用意します",
+        "作文",
+        "洋食"
+      ],
+      "answer": "海岸",
+      "explain": "海岸（かいがん）— bờ biển"
+    },
+    {
+      "section": "Kanji · Unit 38B",
+      "prompt": "海岸を（　　　）する",
+      "opts": [
+        "散歩",
+        "両手",
+        "お宅",
+        "怖い"
+      ],
+      "answer": "散歩",
+      "explain": "散歩（さんぽ）— đi dạo"
+    },
+    {
+      "section": "Kanji · Unit 38B",
+      "prompt": "自動車（　　　）を見学する",
+      "opts": [
+        "工場",
+        "お見舞い",
+        "政治",
+        "奥様"
+      ],
+      "answer": "工場",
+      "explain": "工場（こうじょう）— nhà máy"
+    },
+    {
+      "section": "Kanji · Unit 38B",
+      "prompt": "小さな（　　　）",
+      "opts": [
+        "村",
+        "文法",
+        "お祝い",
+        "原因"
+      ],
+      "answer": "村",
+      "explain": "村（むら）— làng"
+    },
+    {
+      "section": "Kanji · Unit 38B",
+      "prompt": "（　　　）会った",
+      "opts": [
+        "初めて",
+        "実験",
+        "優しい",
+        "両親"
+      ],
+      "answer": "初めて",
+      "explain": "初めて（はじ）— Lần đầu"
+    },
+    {
+      "section": "Kanji · Unit 38B",
+      "prompt": "（　　　）て会った",
+      "opts": [
+        "初め",
+        "狭い",
+        "両手",
+        "田中様"
+      ],
+      "answer": "初め",
+      "explain": "初め（はじ）— ban đầu"
+    },
+    {
+      "section": "Kanji · Unit 39A",
+      "prompt": "（　　　）が便利だ",
+      "opts": [
+        "交通",
+        "二次会",
+        "祖母",
+        "薬"
+      ],
+      "answer": "交通",
+      "explain": "交通（こうつう）— giao thông"
+    },
+    {
+      "section": "Kanji · Unit 39A",
+      "prompt": "（　　　）が不便だ",
+      "opts": [
+        "交通",
+        "両手",
+        "奥様",
+        "宿題"
+      ],
+      "answer": "交通",
+      "explain": "交通（こうつう）— giao thông"
+    },
+    {
+      "section": "Kanji · Unit 39A",
+      "prompt": "（　　　）な漢字",
+      "opts": [
+        "複雑",
+        "散歩",
+        "柔道",
+        "両親"
+      ],
+      "answer": "複雑",
+      "explain": "複雑（ふくざつ）— phức tạp"
+    },
+    {
+      "section": "Kanji · Unit 39A",
+      "prompt": "（　　　）な問題",
+      "opts": [
+        "複雑",
+        "お土産",
+        "生徒",
+        "水泳"
+      ],
+      "answer": "複雑",
+      "explain": "複雑（ふくざつ）— phức tạp"
+    },
+    {
+      "section": "Kanji · Unit 39A",
+      "prompt": "複雑な（　　　）",
+      "opts": [
+        "気持ち",
+        "野菜",
+        "汚い",
+        "心"
+      ],
+      "answer": "気持ち",
+      "explain": "気持ち（きも）— Tâm trạng, cảm giác"
+    },
+    {
+      "section": "Kanji · Unit 39A",
+      "prompt": "（　　　）な気持ち",
+      "opts": [
+        "複雑",
+        "空気",
+        "出発する",
+        "優しい"
+      ],
+      "answer": "複雑",
+      "explain": "複雑（ふくざつ）— phức tạp"
+    },
+    {
+      "section": "Kanji · Unit 39A",
+      "prompt": "（　　　）経験",
+      "opts": [
+        "恥ずかしい",
+        "娘",
+        "大勢",
+        "牛乳"
+      ],
+      "answer": "恥ずかしい",
+      "explain": "恥ずかしい（は）— xấu hổ"
+    },
+    {
+      "section": "Kanji · Unit 39A",
+      "prompt": "台風で（　　　）が止まりました。",
+      "opts": [
+        "交通",
+        "係員",
+        "緑",
+        "辞書"
+      ],
+      "answer": "交通",
+      "explain": "交通（こうつう）— giao thông"
+    },
+    {
+      "section": "Kanji · Unit 39A",
+      "prompt": "台（　　　）で交通が止まりました。",
+      "opts": [
+        "風",
+        "値段",
+        "太い",
+        "給料"
+      ],
+      "answer": "風",
+      "explain": "風（かぜ）— gió"
+    },
+    {
+      "section": "Kanji · Unit 39A",
+      "prompt": "このソフトは使い方が（　　　）で、わかりません。",
+      "opts": [
+        "複雑",
+        "皆さん",
+        "無理",
+        "空気"
+      ],
+      "answer": "複雑",
+      "explain": "複雑（ふくざつ）— phức tạp"
+    },
+    {
+      "section": "Kanji · Unit 39A",
+      "prompt": "（　　　）で人が死にました。",
+      "opts": [
+        "火事",
+        "返事",
+        "失敗",
+        "水泳"
+      ],
+      "answer": "火事",
+      "explain": "火事（かじ）— Hỏa hoạn"
+    },
+    {
+      "section": "Kanji · Unit 39A",
+      "prompt": "（　　　）事で人が死にました。",
+      "opts": [
+        "火",
+        "両手",
+        "首",
+        "水泳"
+      ],
+      "answer": "火",
+      "explain": "火（ひ）— Lửa"
+    },
+    {
+      "section": "Kanji · Unit 39B",
+      "prompt": "大きい（　　　）があった",
+      "opts": [
+        "地震",
+        "庭",
+        "到着します",
+        "必ず"
+      ],
+      "answer": "地震",
+      "explain": "地震（じしん）— động đất"
+    },
+    {
+      "section": "Kanji · Unit 39B",
+      "prompt": "（　　　）が多い",
+      "opts": [
+        "地震",
+        "気持ち",
+        "息子",
+        "風"
+      ],
+      "answer": "地震",
+      "explain": "地震（じしん）— động đất"
+    },
+    {
+      "section": "Kanji · Unit 39B",
+      "prompt": "（　　　）部屋",
+      "opts": [
+        "狭い",
+        "原因",
+        "庭",
+        "お目にかかります"
+      ],
+      "answer": "狭い",
+      "explain": "狭い（せま）— hẹp"
+    },
+    {
+      "section": "Kanji · Unit 39B",
+      "prompt": "（　　　）で二人死んだ",
+      "opts": [
+        "火事",
+        "方法",
+        "心配",
+        "発音"
+      ],
+      "answer": "火事",
+      "explain": "火事（かじ）— Hỏa hoạn"
+    },
+    {
+      "section": "Kanji · Unit 39B",
+      "prompt": "（　　　）事で二人死んだ",
+      "opts": [
+        "火",
+        "空気",
+        "水泳",
+        "石油"
+      ],
+      "answer": "火",
+      "explain": "火（ひ）— Lửa"
+    },
+    {
+      "section": "Kanji · Unit 39B",
+      "prompt": "友達が（　　　）いる",
+      "opts": [
+        "大勢",
+        "両手",
+        "合う",
+        "石油"
+      ],
+      "answer": "大勢",
+      "explain": "大勢（おおぜい）— nhiều"
+    },
+    {
+      "section": "Kanji · Unit 39B",
+      "prompt": "人が（　　　）死んだ",
+      "opts": [
+        "大勢",
+        "案内します",
+        "薬",
+        "私"
+      ],
+      "answer": "大勢",
+      "explain": "大勢（おおぜい）— nhiều"
+    },
+    {
+      "section": "Kanji · Unit 39B",
+      "prompt": "来る（　　　）彼を見た",
+      "opts": [
+        "途中で",
+        "お祝い",
+        "風",
+        "資料"
+      ],
+      "answer": "途中で",
+      "explain": "途中で（とちゅう）— giữa đường, giữa chừng"
+    },
+    {
+      "section": "Kanji · Unit 39B",
+      "prompt": "来る途中で（　　　）を見た",
+      "opts": [
+        "彼",
+        "お目にかかります",
+        "散歩",
+        "大勢"
+      ],
+      "answer": "彼",
+      "explain": "彼（かれ）— anh ấy, bạn trai"
+    },
+    {
+      "section": "Kanji · Unit 39B",
+      "prompt": "旅行の（　　　）お金を落とした",
+      "opts": [
+        "途中で",
+        "暑い",
+        "恥ずかしい",
+        "笑います"
+      ],
+      "answer": "途中で",
+      "explain": "途中で（とちゅう）— giữa đường, giữa chừng"
+    },
+    {
+      "section": "Kanji · Unit 39B",
+      "prompt": "旅行の途中でお（　　　）を落とした",
+      "opts": [
+        "金",
+        "発音",
+        "交通",
+        "文法"
+      ],
+      "answer": "金",
+      "explain": "金（きん）— Vàng"
+    },
+    {
+      "section": "Kanji · Unit 39B",
+      "prompt": "この部屋は（　　　）ので、新しいマンションを買いたいです。",
+      "opts": [
+        "狭い",
+        "牛乳",
+        "ご存じです",
+        "変える"
+      ],
+      "answer": "狭い",
+      "explain": "狭い（せま）— hẹp"
+    },
+    {
+      "section": "Kanji · Unit 39B",
+      "prompt": "（　　　）で本棚が倒れました。",
+      "opts": [
+        "地震",
+        "自然",
+        "船",
+        "文化"
+      ],
+      "answer": "地震",
+      "explain": "地震（じしん）— động đất"
+    },
+    {
+      "section": "Kanji · Unit 39B",
+      "prompt": "飛行機の事故で（　　　）の人が死にました。",
+      "opts": [
+        "大勢",
+        "お祝い",
+        "祭り",
+        "お見舞い"
+      ],
+      "answer": "大勢",
+      "explain": "大勢（おおぜい）— nhiều"
+    },
+    {
+      "section": "Kanji · Unit 39B",
+      "prompt": "（　　　）のニュースを見て、びっくりしました。",
+      "opts": [
+        "地震",
+        "政治",
+        "事務所",
+        "洋食"
+      ],
+      "answer": "地震",
+      "explain": "地震（じしん）— động đất"
+    },
+    {
+      "section": "Kanji · Unit 39B",
+      "prompt": "来る（　　　）事故があって、電車が遅れてしまいました。",
+      "opts": [
+        "途中で",
+        "返す",
+        "頭",
+        "発表会"
+      ],
+      "answer": "途中で",
+      "explain": "途中で（とちゅう）— giữa đường, giữa chừng"
+    },
+    {
+      "section": "Kanji · Unit 39B",
+      "prompt": "メールをもらって、安（　　　）しました。",
+      "opts": [
+        "心",
+        "汚い",
+        "難しい",
+        "石油"
+      ],
+      "answer": "心",
+      "explain": "心（こころ）— Trái tim, tâm hồn"
+    },
+    {
+      "section": "Kanji · Unit 39B",
+      "prompt": "このへんの海は（　　　）ので、泳がないほうがいいです。",
+      "opts": [
+        "汚い",
+        "給料",
+        "文化",
+        "優しい"
+      ],
+      "answer": "汚い",
+      "explain": "汚い（きたな）— Dơ, bẩn"
+    },
+    {
+      "section": "Kanji · Unit 40A",
+      "prompt": "大きい（　　　）",
+      "opts": [
+        "靴",
+        "池",
+        "切符",
+        "髪"
+      ],
+      "answer": "靴",
+      "explain": "靴（くつ）— giày"
+    },
+    {
+      "section": "Kanji · Unit 40A",
+      "prompt": "小さい（　　　）",
+      "opts": [
+        "靴",
+        "本物",
+        "社会",
+        "祭り"
+      ],
+      "answer": "靴",
+      "explain": "靴（くつ）— giày"
+    },
+    {
+      "section": "Kanji · Unit 40A",
+      "prompt": "（　　　）をはく",
+      "opts": [
+        "靴",
+        "方法",
+        "恥ずかしい",
+        "残念"
+      ],
+      "answer": "靴",
+      "explain": "靴（くつ）— giày"
+    },
+    {
+      "section": "Kanji · Unit 40A",
+      "prompt": "（　　　）をする",
+      "opts": [
+        "返事",
+        "汚い",
+        "散歩",
+        "雑誌"
+      ],
+      "answer": "返事",
+      "explain": "返事（へんじ）— hồi âm, phản hồi"
+    },
+    {
+      "section": "Kanji · Unit 40A",
+      "prompt": "（　　　）を書く",
+      "opts": [
+        "返事",
+        "家賃",
+        "日記",
+        "特別"
+      ],
+      "answer": "返事",
+      "explain": "返事（へんじ）— hồi âm, phản hồi"
+    },
+    {
+      "section": "Kanji · Unit 40A",
+      "prompt": "紙の（　　　）",
+      "opts": [
+        "表",
+        "到着します",
+        "発音",
+        "海岸"
+      ],
+      "answer": "表",
+      "explain": "表（おもて）— mặt ngoài, mặt trước"
+    },
+    {
+      "section": "Kanji · Unit 40A",
+      "prompt": "本を （　　　）",
+      "opts": [
+        "返す",
+        "点",
+        "空気",
+        "石油"
+      ],
+      "answer": "返す",
+      "explain": "返す（かえ）— trả lại"
+    },
+    {
+      "section": "Kanji · Unit 40A",
+      "prompt": "靴のサイズが（　　　）かどうか、はいてみます。",
+      "opts": [
+        "合う",
+        "息子",
+        "気持ち",
+        "出発する"
+      ],
+      "answer": "合う",
+      "explain": "合う（あ）— Hợp, phù hợp"
+    },
+    {
+      "section": "Kanji · Unit 40A",
+      "prompt": "（　　　）のサイズが合うかどうか、はいてみます。",
+      "opts": [
+        "靴",
+        "日記",
+        "気持ち",
+        "発表"
+      ],
+      "answer": "靴",
+      "explain": "靴（くつ）— giày"
+    },
+    {
+      "section": "Kanji · Unit 40A",
+      "prompt": "旅行に行くかどうか、（　　　）をしてください。",
+      "opts": [
+        "返事",
+        "合う",
+        "大勢",
+        "風"
+      ],
+      "answer": "返事",
+      "explain": "返事（へんじ）— hồi âm, phản hồi"
+    },
+    {
+      "section": "Kanji · Unit 40A",
+      "prompt": "（　　　）に何人参加するか、わかりません。",
+      "opts": [
+        "忘年会",
+        "生徒",
+        "難しい",
+        "大勢"
+      ],
+      "answer": "忘年会",
+      "explain": "忘年会（ぼうねんかい）— Tiệc cuối năm, tiếc tất niên"
+    },
+    {
+      "section": "Kanji · Unit 40A",
+      "prompt": "忘年会に何人（　　　）するか、わかりません。",
+      "opts": [
+        "参加",
+        "牛乳",
+        "失礼します",
+        "宿題"
+      ],
+      "answer": "参加",
+      "explain": "参加（さんか）— Tham gia"
+    },
+    {
+      "section": "Kanji · Unit 40A",
+      "prompt": "結婚式の（　　　）に行くかどうか、返事をしなければなりません。",
+      "opts": [
+        "二次会",
+        "池",
+        "育てる",
+        "原料"
+      ],
+      "answer": "二次会",
+      "explain": "二次会（にじかい）— Tăng 2"
+    },
+    {
+      "section": "Kanji · Unit 40A",
+      "prompt": "（　　　）の二次会に行くかどうか、返事をしなければなりません。",
+      "opts": [
+        "結婚式",
+        "返す",
+        "原料",
+        "お目にかかります"
+      ],
+      "answer": "結婚式",
+      "explain": "結婚式（けっこんしき）— Lễ kết hôn"
+    },
+    {
+      "section": "Kanji · Unit 40A",
+      "prompt": "結婚式の二次会に行くかどうか、（　　　）をしなければなりません。",
+      "opts": [
+        "返事",
+        "気持ち",
+        "両手",
+        "雑誌"
+      ],
+      "answer": "返事",
+      "explain": "返事（へんじ）— hồi âm, phản hồi"
+    },
+    {
+      "section": "Kanji · Unit 40B",
+      "prompt": "（　　　）の準備",
+      "opts": [
+        "発表",
+        "給料",
+        "方法",
+        "牛乳"
+      ],
+      "answer": "発表",
+      "explain": "発表（はっぴょう）— phát biểu"
+    },
+    {
+      "section": "Kanji · Unit 40B",
+      "prompt": "発表の（　　　）",
+      "opts": [
+        "準備",
+        "実験",
+        "船",
+        "卵"
+      ],
+      "answer": "準備",
+      "explain": "準備（じゅんび）— chuẩn bị"
+    },
+    {
+      "section": "Kanji · Unit 40B",
+      "prompt": "発（　　　）の準備",
+      "opts": [
+        "表",
+        "確かめます",
+        "狭い",
+        "出発する"
+      ],
+      "answer": "表",
+      "explain": "表（おもて）— mặt ngoài, mặt trước"
+    },
+    {
+      "section": "Kanji · Unit 40B",
+      "prompt": "（　　　）をする",
+      "opts": [
+        "発表",
+        "暖かい",
+        "妻",
+        "途中で"
+      ],
+      "answer": "発表",
+      "explain": "発表（はっぴょう）— phát biểu"
+    },
+    {
+      "section": "Kanji · Unit 40B",
+      "prompt": "発（　　　）をする",
+      "opts": [
+        "表",
+        "用意します",
+        "案内します",
+        "娘"
+      ],
+      "answer": "表",
+      "explain": "表（おもて）— mặt ngoài, mặt trước"
+    },
+    {
+      "section": "Kanji · Unit 40B",
+      "prompt": "スピーチの（　　　）がある",
+      "opts": [
+        "発表会",
+        "参ります",
+        "娘",
+        "暖かい"
+      ],
+      "answer": "発表会",
+      "explain": "発表会（はっぴょうかい）— buổi phát biểu/ thuyết trình"
+    },
+    {
+      "section": "Kanji · Unit 40B",
+      "prompt": "スピーチの（　　　）会がある",
+      "opts": [
+        "発表",
+        "出発する",
+        "結婚式",
+        "失礼します"
+      ],
+      "answer": "発表",
+      "explain": "発表（はっぴょう）— phát biểu"
+    },
+    {
+      "section": "Kanji · Unit 40B",
+      "prompt": "スピーチの発（　　　）会がある",
+      "opts": [
+        "表",
+        "暑い",
+        "文法",
+        "初めて"
+      ],
+      "answer": "表",
+      "explain": "表（おもて）— mặt ngoài, mặt trước"
+    },
+    {
+      "section": "Kanji · Unit 40B",
+      "prompt": "（　　　）とき",
+      "opts": [
+        "若い",
+        "風",
+        "祖父",
+        "難しい"
+      ],
+      "answer": "若い",
+      "explain": "若い（わか）— trẻ"
+    },
+    {
+      "section": "Kanji · Unit 40B",
+      "prompt": "（　　　）なこと",
+      "opts": [
+        "心配",
+        "文化",
+        "火事",
+        "以下"
+      ],
+      "answer": "心配",
+      "explain": "心配（しんぱい）— lo lắng"
+    },
+    {
+      "section": "Kanji · Unit 40B",
+      "prompt": "（　　　）配なこと",
+      "opts": [
+        "心",
+        "池",
+        "妻",
+        "初め"
+      ],
+      "answer": "心",
+      "explain": "心（こころ）— Trái tim, tâm hồn"
+    },
+    {
+      "section": "Kanji · Unit 40B",
+      "prompt": "あしたの天気が（　　　）だ",
+      "opts": [
+        "心配",
+        "初めに",
+        "自由に",
+        "以下"
+      ],
+      "answer": "心配",
+      "explain": "心配（しんぱい）— lo lắng"
+    },
+    {
+      "section": "Kanji · Unit 40B",
+      "prompt": "あしたの天気が（　　　）配だ",
+      "opts": [
+        "心",
+        "返事",
+        "皆さん",
+        "汚い"
+      ],
+      "answer": "心",
+      "explain": "心（こころ）— Trái tim, tâm hồn"
+    },
+    {
+      "section": "Kanji · Unit 40B",
+      "prompt": "6歳（　　　）は無料だ",
+      "opts": [
+        "以下",
+        "心",
+        "必ず",
+        "特別"
+      ],
+      "answer": "以下",
+      "explain": "以下（いか）— dưới…"
+    },
+    {
+      "section": "Kanji · Unit 40B",
+      "prompt": "木曜日は都合がいいかどうか、（　　　）。",
+      "opts": [
+        "確かめます",
+        "本物",
+        "薬",
+        "祖母"
+      ],
+      "answer": "確かめます",
+      "explain": "確かめます（たし）— xác nhận, kiểm tra"
+    },
+    {
+      "section": "Kanji · Unit 40B",
+      "prompt": "（　　　）がうまくいくかどうか、心配しています。",
+      "opts": [
+        "発表",
+        "奥様",
+        "金",
+        "到着します"
+      ],
+      "answer": "発表",
+      "explain": "発表（はっぴょう）— phát biểu"
+    },
+    {
+      "section": "Kanji · Unit 40B",
+      "prompt": "発表がうまくいくかどうか、（　　　）しています。",
+      "opts": [
+        "心配",
+        "原因",
+        "天気予報",
+        "残念"
+      ],
+      "answer": "心配",
+      "explain": "心配（しんぱい）— lo lắng"
+    },
+    {
+      "section": "Kanji · Unit 40B",
+      "prompt": "発（　　　）がうまくいくかどうか、心配しています。",
+      "opts": [
+        "表",
+        "祭り",
+        "両手",
+        "雑誌"
+      ],
+      "answer": "表",
+      "explain": "表（おもて）— mặt ngoài, mặt trước"
+    },
+    {
+      "section": "Kanji · Unit 40B",
+      "prompt": "発表がうまくいくかどうか、（　　　）配しています。",
+      "opts": [
+        "心",
+        "無理",
+        "伺います",
+        "娘"
+      ],
+      "answer": "心",
+      "explain": "心（こころ）— Trái tim, tâm hồn"
+    },
+    {
+      "section": "Kanji · Unit 40B",
+      "prompt": "荷物の重さが20キロ（　　　）かどうか、はかってみましょう。",
+      "opts": [
+        "以下",
+        "水泳",
+        "忙しい",
+        "米"
+      ],
+      "answer": "以下",
+      "explain": "以下（いか）— dưới…"
+    },
+    {
+      "section": "Kanji · Unit 40B",
+      "prompt": "サイズが（　　　）かどうか、着てみます。",
+      "opts": [
+        "合う",
+        "方法",
+        "知らせる",
+        "妻"
+      ],
+      "answer": "合う",
+      "explain": "合う（あ）— Hợp, phù hợp"
+    },
+    {
+      "section": "Kanji · Unit 40B",
+      "prompt": "A：VN321便が何時に（　　　）か、知っていますか？B：10時半ですよ。",
+      "opts": [
+        "出発する",
+        "自由に",
+        "法律",
+        "大勢"
+      ],
+      "answer": "出発する",
+      "explain": "出発する（しゅっぱつ）— Xuất phát"
+    },
+    {
+      "section": "Kanji · Unit 41A",
+      "prompt": "入学の（　　　）",
+      "opts": [
+        "お祝い",
+        "心配",
+        "事務所",
+        "田中様"
+      ],
+      "answer": "お祝い",
+      "explain": "お祝い（いわ）— chúc mừng, quà mừng"
+    },
+    {
+      "section": "Kanji · Unit 41A",
+      "prompt": "（　　　）をする",
+      "opts": [
+        "お祝い",
+        "以下",
+        "珍しい",
+        "初めて"
+      ],
+      "answer": "お祝い",
+      "explain": "お祝い（いわ）— chúc mừng, quà mừng"
+    },
+    {
+      "section": "Kanji · Unit 41A",
+      "prompt": "友達の（　　　）に行く",
+      "opts": [
+        "お見舞い",
+        "彼女",
+        "息子",
+        "拝見します"
+      ],
+      "answer": "お見舞い",
+      "explain": "お見舞い（みま）— thăm bệnh"
+    },
+    {
+      "section": "Kanji · Unit 41A",
+      "prompt": "旅行の（　　　）を買う",
+      "opts": [
+        "お土産",
+        "出発する",
+        "宿題",
+        "発表会"
+      ],
+      "answer": "お土産",
+      "explain": "お土産（みやげ）— quà lưu niệm"
+    },
+    {
+      "section": "Kanji · Unit 41A",
+      "prompt": "（　　　）の着物",
+      "opts": [
+        "祖母",
+        "寒い",
+        "初めて",
+        "難しい"
+      ],
+      "answer": "祖母",
+      "explain": "祖母（そぼ）— bà (mình)"
+    },
+    {
+      "section": "Kanji · Unit 41A",
+      "prompt": "（　　　）を思い出した",
+      "opts": [
+        "祖父",
+        "交通",
+        "拝見します",
+        "初めに"
+      ],
+      "answer": "祖父",
+      "explain": "祖父（そふ）— ông (mình)"
+    },
+    {
+      "section": "Kanji · Unit 41A",
+      "prompt": "（　　　）は会社員だ",
+      "opts": [
+        "娘",
+        "絵",
+        "両手",
+        "恥ずかしい"
+      ],
+      "answer": "娘",
+      "explain": "娘（むすめ）— con gái (mình)"
+    },
+    {
+      "section": "Kanji · Unit 41A",
+      "prompt": "（　　　）は8歳だ",
+      "opts": [
+        "息子",
+        "散歩",
+        "恥ずかしい",
+        "知らせる"
+      ],
+      "answer": "息子",
+      "explain": "息子（むすこ）— con trai (mình)"
+    },
+    {
+      "section": "Kanji · Unit 41A",
+      "prompt": "結婚の（　　　）に、山田さんが、すてきなお皿をくださいました。",
+      "opts": [
+        "お祝い",
+        "首",
+        "天気予報",
+        "両親"
+      ],
+      "answer": "お祝い",
+      "explain": "お祝い（いわ）— chúc mừng, quà mừng"
+    },
+    {
+      "section": "Kanji · Unit 41A",
+      "prompt": "（　　　）に、田中さんが、おいしいくだものをくださいました。",
+      "opts": [
+        "お見舞い",
+        "米",
+        "工場",
+        "参ります"
+      ],
+      "answer": "お見舞い",
+      "explain": "お見舞い（みま）— thăm bệnh"
+    },
+    {
+      "section": "Kanji · Unit 41A",
+      "prompt": "山田さんに（　　　）をいただきました。",
+      "opts": [
+        "お土産",
+        "用意します",
+        "水泳",
+        "牛乳"
+      ],
+      "answer": "お土産",
+      "explain": "お土産（みやげ）— quà lưu niệm"
+    },
+    {
+      "section": "Kanji · Unit 41A",
+      "prompt": "祖父と（　　　）",
+      "opts": [
+        "祖母",
+        "石油",
+        "庭",
+        "田中様"
+      ],
+      "answer": "祖母",
+      "explain": "祖母（そぼ）— bà (mình)"
+    },
+    {
+      "section": "Kanji · Unit 41A",
+      "prompt": "（　　　）と祖母",
+      "opts": [
+        "祖父",
+        "政治",
+        "暖かい",
+        "本物"
+      ],
+      "answer": "祖父",
+      "explain": "祖父（そふ）— ông (mình)"
+    },
+    {
+      "section": "Kanji · Unit 41A",
+      "prompt": "娘と（　　　）",
+      "opts": [
+        "息子",
+        "田中様",
+        "発音",
+        "両手"
+      ],
+      "answer": "息子",
+      "explain": "息子（むすこ）— con trai (mình)"
+    },
+    {
+      "section": "Kanji · Unit 41A",
+      "prompt": "（　　　）と息子",
+      "opts": [
+        "娘",
+        "自然",
+        "発表会",
+        "辞書"
+      ],
+      "answer": "娘",
+      "explain": "娘（むすめ）— con gái (mình)"
+    },
+    {
+      "section": "Kanji · Unit 41A",
+      "prompt": "中川さんにきれいな（　　　）葉書をいただきました。",
+      "opts": [
+        "絵",
+        "確かめます",
+        "発表会",
+        "返す"
+      ],
+      "answer": "絵",
+      "explain": "絵（え）— bức tranh"
+    },
+    {
+      "section": "Kanji · Unit 41A",
+      "prompt": "まごに新しい（　　　）本をやりました。",
+      "opts": [
+        "絵",
+        "文法",
+        "卵",
+        "首"
+      ],
+      "answer": "絵",
+      "explain": "絵（え）— bức tranh"
+    },
+    {
+      "section": "Kanji · Unit 41A",
+      "prompt": "まごに（　　　）をやりました。",
+      "opts": [
+        "靴下",
+        "さ来月",
+        "暑い",
+        "気持ち"
+      ],
+      "answer": "靴下",
+      "explain": "靴下（くつした）— Vớ, tất"
+    },
+    {
+      "section": "Kanji · Unit 41A",
+      "prompt": "まごに（　　　）下をやりました。",
+      "opts": [
+        "靴",
+        "風",
+        "給料",
+        "野菜"
+      ],
+      "answer": "靴",
+      "explain": "靴（くつ）— giày"
+    },
+    {
+      "section": "Kanji · Unit 41B",
+      "prompt": "日本語の（　　　）を書く",
+      "opts": [
+        "作文",
+        "初めに",
+        "拝見します",
+        "二次会"
+      ],
+      "answer": "作文",
+      "explain": "作文（さくぶん）— bài văn"
+    },
+    {
+      "section": "Kanji · Unit 41B",
+      "prompt": "英語の（　　　）を習う",
+      "opts": [
+        "文法",
+        "原因",
+        "生徒",
+        "さ来月"
+      ],
+      "answer": "文法",
+      "explain": "文法（ぶんぽう）— ngữ pháp"
+    },
+    {
+      "section": "Kanji · Unit 41B",
+      "prompt": "この（　　　）でやる",
+      "opts": [
+        "方法",
+        "本物",
+        "宿題",
+        "薬"
+      ],
+      "answer": "方法",
+      "explain": "方法（ほうほう）— phương pháp"
+    },
+    {
+      "section": "Kanji · Unit 41B",
+      "prompt": "英語の（　　　）をする",
+      "opts": [
+        "宿題",
+        "卵",
+        "笑います",
+        "田中様"
+      ],
+      "answer": "宿題",
+      "explain": "宿題（しゅくだい）— bài tập"
+    },
+    {
+      "section": "Kanji · Unit 41B",
+      "prompt": "（　　　）動物",
+      "opts": [
+        "珍しい",
+        "石油",
+        "靴下",
+        "寒い"
+      ],
+      "answer": "珍しい",
+      "explain": "珍しい（めずら）— hiếm"
+    },
+    {
+      "section": "Kanji · Unit 41B",
+      "prompt": "（　　　）切手",
+      "opts": [
+        "珍しい",
+        "忙しい",
+        "両手",
+        "案内します"
+      ],
+      "answer": "珍しい",
+      "explain": "珍しい（めずら）— hiếm"
+    },
+    {
+      "section": "Kanji · Unit 41B",
+      "prompt": "山田先生に（　　　）を説明していただきました。",
+      "opts": [
+        "文法",
+        "資料",
+        "お祝い",
+        "さ来月"
+      ],
+      "answer": "文法",
+      "explain": "文法（ぶんぽう）— ngữ pháp"
+    },
+    {
+      "section": "Kanji · Unit 41B",
+      "prompt": "ミラー先生が英語の（　　　）を直してくださいました。",
+      "opts": [
+        "発音",
+        "村",
+        "切符",
+        "事務所"
+      ],
+      "answer": "発音",
+      "explain": "発音（はつおん）— Phát âm"
+    },
+    {
+      "section": "Kanji · Unit 41B",
+      "prompt": "弟の（　　　）を直してやりました。",
+      "opts": [
+        "作文",
+        "薬",
+        "祖母",
+        "値段"
+      ],
+      "answer": "作文",
+      "explain": "作文（さくぶん）— bài văn"
+    },
+    {
+      "section": "Kanji · Unit 41B",
+      "prompt": "妹の（　　　）をみてやりました。",
+      "opts": [
+        "宿題",
+        "参加",
+        "係員",
+        "全部"
+      ],
+      "answer": "宿題",
+      "explain": "宿題（しゅくだい）— bài tập"
+    },
+    {
+      "section": "Kanji · Unit 41B",
+      "prompt": "まごに（　　　）動物の本を買ってやりました。",
+      "opts": [
+        "珍しい",
+        "案内します",
+        "忘年会",
+        "薬"
+      ],
+      "answer": "珍しい",
+      "explain": "珍しい（めずら）— hiếm"
+    },
+    {
+      "section": "Kanji · Unit 42A",
+      "prompt": "日本の（　　　）",
+      "opts": [
+        "政治",
+        "返す",
+        "文法",
+        "珍しい"
+      ],
+      "answer": "政治",
+      "explain": "政治（せいじ）— chính trị"
+    },
+    {
+      "section": "Kanji · Unit 42A",
+      "prompt": "中国の（　　　）",
+      "opts": [
+        "文化",
+        "お祝い",
+        "変える",
+        "妻"
+      ],
+      "answer": "文化",
+      "explain": "文化（ぶんか）— văn hóa"
+    },
+    {
+      "section": "Kanji · Unit 42A",
+      "prompt": "シンガポールの（　　　）",
+      "opts": [
+        "法律",
+        "火",
+        "笑います",
+        "野菜"
+      ],
+      "answer": "法律",
+      "explain": "法律（ほうりつ）— pháp luật"
+    },
+    {
+      "section": "Kanji · Unit 42A",
+      "prompt": "（　　　）は元気だ",
+      "opts": [
+        "両親",
+        "発表会",
+        "自然",
+        "地震"
+      ],
+      "answer": "両親",
+      "explain": "両親（りょうしん）— cha mẹ"
+    },
+    {
+      "section": "Kanji · Unit 42A",
+      "prompt": "（　　　）でプレゼントをもらう",
+      "opts": [
+        "両手",
+        "お目にかかります",
+        "お祝い",
+        "発表会"
+      ],
+      "answer": "両手",
+      "explain": "両手（りょうて）— hai tay"
+    },
+    {
+      "section": "Kanji · Unit 42A",
+      "prompt": "A：日本へ来た目的は何ですか。B：大学で（　　　）を勉強するために、来ました。",
+      "opts": [
+        "政治",
+        "方法",
+        "交通",
+        "奥様"
+      ],
+      "answer": "政治",
+      "explain": "政治（せいじ）— chính trị"
+    },
+    {
+      "section": "Kanji · Unit 42A",
+      "prompt": "A：日本へ来た目的は何ですかB：大学でマンガ（　　　）を研究するために、来ました。",
+      "opts": [
+        "文化",
+        "若い",
+        "二次会",
+        "政治"
+      ],
+      "answer": "文化",
+      "explain": "文化（ぶんか）— văn hóa"
+    },
+    {
+      "section": "Kanji · Unit 42A",
+      "prompt": "弁護士になるために、（　　　）を勉強しています",
+      "opts": [
+        "法律",
+        "柔道",
+        "珍しい",
+        "方法"
+      ],
+      "answer": "法律",
+      "explain": "法律（ほうりつ）— pháp luật"
+    },
+    {
+      "section": "Kanji · Unit 42A",
+      "prompt": "（　　　）と住むために、今家を探しています。",
+      "opts": [
+        "両親",
+        "金",
+        "村",
+        "暖かい"
+      ],
+      "answer": "両親",
+      "explain": "両親（りょうしん）— cha mẹ"
+    },
+    {
+      "section": "Kanji · Unit 42A",
+      "prompt": "（　　　）で 荷物を 持つ",
+      "opts": [
+        "両手",
+        "薬",
+        "牛乳",
+        "心"
+      ],
+      "answer": "両手",
+      "explain": "両手（りょうて）— hai tay"
+    },
+    {
+      "section": "Kanji · Unit 42B",
+      "prompt": "（　　　）が多い",
+      "opts": [
+        "緑",
+        "値段",
+        "笑います",
+        "薬"
+      ],
+      "answer": "緑",
+      "explain": "緑（みどり）— màu xanh lá cây, cây xanh"
+    },
+    {
+      "section": "Kanji · Unit 42B",
+      "prompt": "（　　　）が少ない",
+      "opts": [
+        "緑",
+        "恥ずかしい",
+        "彼女",
+        "拝見します"
+      ],
+      "answer": "緑",
+      "explain": "緑（みどり）— màu xanh lá cây, cây xanh"
+    },
+    {
+      "section": "Kanji · Unit 42B",
+      "prompt": "（　　　）でご飯を包む",
+      "opts": [
+        "卵",
+        "怖い",
+        "失敗",
+        "難しい"
+      ],
+      "answer": "卵",
+      "explain": "卵（たまご）— trứng"
+    },
+    {
+      "section": "Kanji · Unit 42B",
+      "prompt": "お（　　　）が必要だ",
+      "opts": [
+        "金",
+        "お宅",
+        "値段",
+        "首"
+      ],
+      "answer": "金",
+      "explain": "金（きん）— Vàng"
+    },
+    {
+      "section": "Kanji · Unit 42B",
+      "prompt": "お（　　　）を払う",
+      "opts": [
+        "金",
+        "辞書",
+        "奥様",
+        "心配"
+      ],
+      "answer": "金",
+      "explain": "金（きん）— Vàng"
+    },
+    {
+      "section": "Kanji · Unit 42B",
+      "prompt": "ボーナスを（　　　）使ってしまった",
+      "opts": [
+        "全部",
+        "石油",
+        "散歩",
+        "拝見します"
+      ],
+      "answer": "全部",
+      "explain": "全部（ぜんぶ）— toàn bộ"
+    },
+    {
+      "section": "Kanji · Unit 42B",
+      "prompt": "独身の人はいいですね。自分のために、（　　　）お金が使えます。",
+      "opts": [
+        "全部",
+        "初めて",
+        "さ来月",
+        "変える"
+      ],
+      "answer": "全部",
+      "explain": "全部（ぜんぶ）— toàn bộ"
+    },
+    {
+      "section": "Kanji · Unit 42B",
+      "prompt": "独身の人はいいですね。自分のために、全部お（　　　）が使えます。",
+      "opts": [
+        "金",
+        "表",
+        "実験",
+        "二次会"
+      ],
+      "answer": "金",
+      "explain": "金（きん）— Vàng"
+    },
+    {
+      "section": "Kanji · Unit 42B",
+      "prompt": "この町は（　　　）が多いです。",
+      "opts": [
+        "緑",
+        "複雑",
+        "知らせる",
+        "頭"
+      ],
+      "answer": "緑",
+      "explain": "緑（みどり）— màu xanh lá cây, cây xanh"
+    },
+    {
+      "section": "Kanji · Unit 43A",
+      "prompt": "お（　　　）とご飯",
+      "opts": [
+        "米",
+        "家賃",
+        "珍しい",
+        "複雑"
+      ],
+      "answer": "米",
+      "explain": "米（こめ）— gạo"
+    },
+    {
+      "section": "Kanji · Unit 43A",
+      "prompt": "白い（　　　）を洗う",
+      "opts": [
+        "米",
+        "緑",
+        "天気予報",
+        "薬"
+      ],
+      "answer": "米",
+      "explain": "米（こめ）— gạo"
+    },
+    {
+      "section": "Kanji · Unit 43A",
+      "prompt": "電車の（　　　）を買う",
+      "opts": [
+        "切符",
+        "生徒",
+        "案内します",
+        "天気予報"
+      ],
+      "answer": "切符",
+      "explain": "切符（きっぷ）— vé"
+    },
+    {
+      "section": "Kanji · Unit 43A",
+      "prompt": "8月は（　　　）",
+      "opts": [
+        "暑い",
+        "田中様",
+        "忙しい",
+        "文化"
+      ],
+      "answer": "暑い",
+      "explain": "暑い（あつ）— nóng"
+    },
+    {
+      "section": "Kanji · Unit 43A",
+      "prompt": "2月は（　　　）",
+      "opts": [
+        "寒い",
+        "優しい",
+        "気持ち",
+        "速い"
+      ],
+      "answer": "寒い",
+      "explain": "寒い（さむ）— lạnh"
+    },
+    {
+      "section": "Kanji · Unit 43A",
+      "prompt": "ことしは 米の （　　　）が 上がりそうです。",
+      "opts": [
+        "値段",
+        "お土産",
+        "心配",
+        "薬"
+      ],
+      "answer": "値段",
+      "explain": "値段（ねだん）— giá cả"
+    },
+    {
+      "section": "Kanji · Unit 43A",
+      "prompt": "ことしは （　　　）の 値段が 上がりそうです。",
+      "opts": [
+        "米",
+        "表",
+        "資料",
+        "用意します"
+      ],
+      "answer": "米",
+      "explain": "米（こめ）— gạo"
+    },
+    {
+      "section": "Kanji · Unit 43A",
+      "prompt": "ちょっと （　　　）を 買って 来ます。",
+      "opts": [
+        "切符",
+        "準備",
+        "失礼します",
+        "首相"
+      ],
+      "answer": "切符",
+      "explain": "切符（きっぷ）— vé"
+    },
+    {
+      "section": "Kanji · Unit 43A",
+      "prompt": "Ａ：（　　　）が 足りませんね。Ｂ：何枚ですか。すぐ コピーして 来ます。",
+      "opts": [
+        "資料",
+        "伺います",
+        "準備",
+        "申します"
+      ],
+      "answer": "資料",
+      "explain": "資料（しりょう）— tài liệu"
+    },
+    {
+      "section": "Kanji · Unit 43B",
+      "prompt": "英語の（　　　）",
+      "opts": [
+        "辞書",
+        "首",
+        "失敗",
+        "発表会"
+      ],
+      "answer": "辞書",
+      "explain": "辞書（じしょ）— None"
+    },
+    {
+      "section": "Kanji · Unit 43B",
+      "prompt": "（　　　）の使い方",
+      "opts": [
+        "辞書",
+        "お土産",
+        "参加",
+        "空気"
+      ],
+      "answer": "辞書",
+      "explain": "辞書（じしょ）— None"
+    },
+    {
+      "section": "Kanji · Unit 43B",
+      "prompt": "（　　　）部屋",
+      "opts": [
+        "暖かい",
+        "実験",
+        "石油",
+        "両親"
+      ],
+      "answer": "暖かい",
+      "explain": "暖かい（あたた）— ấm"
+    },
+    {
+      "section": "Kanji · Unit 43B",
+      "prompt": "（　　　）が消える",
+      "opts": [
+        "火",
+        "太い",
+        "確かめます",
+        "法律"
+      ],
+      "answer": "火",
+      "explain": "火（ひ）— Lửa"
+    },
+    {
+      "section": "Kanji · Unit 43B",
+      "prompt": "Ａ：そのかばん、重そうですね。 Ｂ：（　　　）が ３冊 入って いるんです。",
+      "opts": [
+        "辞書",
+        "皆さん",
+        "参加",
+        "牛乳"
+      ],
+      "answer": "辞書",
+      "explain": "辞書（じしょ）— None"
+    },
+    {
+      "section": "Kanji · Unit 43B",
+      "prompt": "ガスの （　　　）が 消えそうです。",
+      "opts": [
+        "火",
+        "さ来月",
+        "恥ずかしい",
+        "雑誌"
+      ],
+      "answer": "火",
+      "explain": "火（ひ）— Lửa"
+    },
+    {
+      "section": "Kanji · Unit 44A",
+      "prompt": "長い（　　　）",
+      "opts": [
+        "髪",
+        "お寺",
+        "用意します",
+        "庭"
+      ],
+      "answer": "髪",
+      "explain": "髪（かみ）— tóc"
+    },
+    {
+      "section": "Kanji · Unit 44A",
+      "prompt": "短い（　　　）",
+      "opts": [
+        "髪",
+        "本物",
+        "火事",
+        "祖父"
+      ],
+      "answer": "髪",
+      "explain": "髪（かみ）— tóc"
+    },
+    {
+      "section": "Kanji · Unit 44A",
+      "prompt": "黒い（　　　）",
+      "opts": [
+        "髪",
+        "彼",
+        "靴",
+        "彼女"
+      ],
+      "answer": "髪",
+      "explain": "髪（かみ）— tóc"
+    },
+    {
+      "section": "Kanji · Unit 44A",
+      "prompt": "かぜの（　　　）を買う",
+      "opts": [
+        "薬",
+        "牛乳",
+        "柔道",
+        "天気予報"
+      ],
+      "answer": "薬",
+      "explain": "薬（くすり）— thuốc"
+    },
+    {
+      "section": "Kanji · Unit 44A",
+      "prompt": "（　　　）がいい",
+      "opts": [
+        "頭",
+        "発表",
+        "全部",
+        "首"
+      ],
+      "answer": "頭",
+      "explain": "頭（あたま）— đầu"
+    },
+    {
+      "section": "Kanji · Unit 44A",
+      "prompt": "（　　　）が痛い",
+      "opts": [
+        "頭",
+        "私",
+        "水泳",
+        "太い"
+      ],
+      "answer": "頭",
+      "explain": "頭（あたま）— đầu"
+    },
+    {
+      "section": "Kanji · Unit 44A",
+      "prompt": "（　　　）を 短くします。",
+      "opts": [
+        "髪",
+        "参ります",
+        "値段",
+        "切符"
+      ],
+      "answer": "髪",
+      "explain": "髪（かみ）— tóc"
+    },
+    {
+      "section": "Kanji · Unit 44A",
+      "prompt": "この（　　　）を飲めば、元気２倍です。",
+      "opts": [
+        "薬",
+        "気持ち",
+        "以下",
+        "靴下"
+      ],
+      "answer": "薬",
+      "explain": "薬（くすり）— thuốc"
+    },
+    {
+      "section": "Kanji · Unit 44A",
+      "prompt": "静かで、（　　　）がきれいな 町が好きです。",
+      "opts": [
+        "空気",
+        "首相",
+        "祭り",
+        "途中で"
+      ],
+      "answer": "空気",
+      "explain": "空気（くうき）— Không khí"
+    },
+    {
+      "section": "Kanji · Unit 44B",
+      "prompt": "（　　　）にする",
+      "opts": [
+        "洋食",
+        "点",
+        "田中様",
+        "暖かい"
+      ],
+      "answer": "洋食",
+      "explain": "洋食（ようしょく）— món ăn kiểu Tây"
+    },
+    {
+      "section": "Kanji · Unit 44B",
+      "prompt": "（　　　）木を切る",
+      "opts": [
+        "太い",
+        "速い",
+        "大勢",
+        "さ来月"
+      ],
+      "answer": "太い",
+      "explain": "太い（ふと）— béo, to, dày"
+    },
+    {
+      "section": "Kanji · Unit 44B",
+      "prompt": "妹は よく （　　　）。",
+      "opts": [
+        "笑います",
+        "発表",
+        "牛乳",
+        "宿題"
+      ],
+      "answer": "笑います",
+      "explain": "笑います（わら）— cười"
+    },
+    {
+      "section": "Kanji · Unit 44B",
+      "prompt": "田中さんは（　　　）ひもをひいています。",
+      "opts": [
+        "太い",
+        "彼",
+        "原因",
+        "ご存じです"
+      ],
+      "answer": "太い",
+      "explain": "太い（ふと）— béo, to, dày"
+    },
+    {
+      "section": "Kanji · Unit 44B",
+      "prompt": "（　　　）が起きたら、どうしますか。",
+      "opts": [
+        "地震",
+        "初めに",
+        "失礼します",
+        "原料"
+      ],
+      "answer": "地震",
+      "explain": "地震（じしん）— động đất"
+    },
+    {
+      "section": "Kanji · Unit 44B",
+      "prompt": "晩ご飯は （　　　）に します。",
+      "opts": [
+        "洋食",
+        "発表会",
+        "特別",
+        "首相"
+      ],
+      "answer": "洋食",
+      "explain": "洋食（ようしょく）— món ăn kiểu Tây"
+    },
+    {
+      "section": "Kanji · Unit 45A",
+      "prompt": "試験の（　　　）が悪かった",
+      "opts": [
+        "点",
+        "発音",
+        "営業",
+        "文法"
+      ],
+      "answer": "点",
+      "explain": "点（てん）— điểm"
+    },
+    {
+      "section": "Kanji · Unit 45A",
+      "prompt": "（　　　）、ありがとう",
+      "opts": [
+        "皆さん",
+        "私",
+        "点",
+        "地震"
+      ],
+      "answer": "皆さん",
+      "explain": "皆さん（みな）— mọi người"
+    },
+    {
+      "section": "Kanji · Unit 45A",
+      "prompt": "会議の（　　　）が必要だ",
+      "opts": [
+        "資料",
+        "忙しい",
+        "娘",
+        "準備"
+      ],
+      "answer": "資料",
+      "explain": "資料（しりょう）— tài liệu"
+    },
+    {
+      "section": "Kanji · Unit 45A",
+      "prompt": "（　　　）が安い",
+      "opts": [
+        "給料",
+        "庭",
+        "両親",
+        "初めに"
+      ],
+      "answer": "給料",
+      "explain": "給料（きゅうりょう）— lương"
+    },
+    {
+      "section": "Kanji · Unit 45A",
+      "prompt": "（　　　）が高い",
+      "opts": [
+        "家賃",
+        "発音",
+        "火事",
+        "失敗"
+      ],
+      "answer": "家賃",
+      "explain": "家賃（やちん）— tiền thuê nhà"
+    },
+    {
+      "section": "Kanji · Unit 45A",
+      "prompt": "（　　　）を払う",
+      "opts": [
+        "家賃",
+        "切符",
+        "初めて",
+        "暑い"
+      ],
+      "answer": "家賃",
+      "explain": "家賃（やちん）— tiền thuê nhà"
+    },
+    {
+      "section": "Kanji · Unit 45B",
+      "prompt": "米の（　　　）が上がる",
+      "opts": [
+        "値段",
+        "風",
+        "怖い",
+        "忙しい"
+      ],
+      "answer": "値段",
+      "explain": "値段（ねだん）— giá cả"
+    },
+    {
+      "section": "Kanji · Unit 45B",
+      "prompt": "（　　　）の値段が上がる",
+      "opts": [
+        "米",
+        "営業",
+        "宿題",
+        "息子"
+      ],
+      "answer": "米",
+      "explain": "米（こめ）— gạo"
+    },
+    {
+      "section": "Kanji · Unit 45B",
+      "prompt": "冷たい（　　　）",
+      "opts": [
+        "風",
+        "お目にかかります",
+        "給料",
+        "両手"
+      ],
+      "answer": "風",
+      "explain": "風（かぜ）— gió"
+    },
+    {
+      "section": "Kanji · Unit 45B",
+      "prompt": "（　　　）が強い",
+      "opts": [
+        "風",
+        "発表",
+        "営業",
+        "海岸"
+      ],
+      "answer": "風",
+      "explain": "風（かぜ）— gió"
+    },
+    {
+      "section": "Kanji · Unit 45B",
+      "prompt": "会えなくて（　　　）だった",
+      "opts": [
+        "残念",
+        "奥様",
+        "柔道",
+        "祭り"
+      ],
+      "answer": "残念",
+      "explain": "残念（ざんねん）— tiếc, đáng tiếc"
+    },
+    {
+      "section": "Kanji · Unit 46A",
+      "prompt": "（　　　）は学生だ",
+      "opts": [
+        "彼",
+        "返事",
+        "船",
+        "拝見します"
+      ],
+      "answer": "彼",
+      "explain": "彼（かれ）— anh ấy, bạn trai"
+    },
+    {
+      "section": "Kanji · Unit 46A",
+      "prompt": "（　　　）は山田さんの妹だ",
+      "opts": [
+        "彼女",
+        "宿題",
+        "返事",
+        "寒い"
+      ],
+      "answer": "彼女",
+      "explain": "彼女（かのじょ）— cô ấy, bạn gái"
+    },
+    {
+      "section": "Kanji · Unit 46A",
+      "prompt": "（　　　）女は山田さんの妹だ",
+      "opts": [
+        "彼",
+        "お土産",
+        "皆さん",
+        "結婚式"
+      ],
+      "answer": "彼",
+      "explain": "彼（かれ）— anh ấy, bạn trai"
+    },
+    {
+      "section": "Kanji · Unit 46A",
+      "prompt": "（　　　）の原因がわからない",
+      "opts": [
+        "火事",
+        "柔道",
+        "発表",
+        "参ります"
+      ],
+      "answer": "火事",
+      "explain": "火事（かじ）— Hỏa hoạn"
+    },
+    {
+      "section": "Kanji · Unit 46A",
+      "prompt": "火事の（　　　）がわからない",
+      "opts": [
+        "原因",
+        "準備",
+        "確かめます",
+        "宿題"
+      ],
+      "answer": "原因",
+      "explain": "原因（げんいん）— nguyên nhân"
+    },
+    {
+      "section": "Kanji · Unit 46A",
+      "prompt": "（　　　）事の原因がわからない",
+      "opts": [
+        "火",
+        "太い",
+        "靴",
+        "無理"
+      ],
+      "answer": "火",
+      "explain": "火（ひ）— Lửa"
+    },
+    {
+      "section": "Kanji · Unit 46A",
+      "prompt": "（　　　）が乾いている",
+      "opts": [
+        "空気",
+        "出発する",
+        "初めて",
+        "無理"
+      ],
+      "answer": "空気",
+      "explain": "空気（くうき）— Không khí"
+    },
+    {
+      "section": "Kanji · Unit 46A",
+      "prompt": "（　　　）で家が焼けた",
+      "opts": [
+        "火事",
+        "発音",
+        "靴下",
+        "以下"
+      ],
+      "answer": "火事",
+      "explain": "火事（かじ）— Hỏa hoạn"
+    },
+    {
+      "section": "Kanji · Unit 46A",
+      "prompt": "（　　　）事で家が焼けた",
+      "opts": [
+        "火",
+        "営業",
+        "必ず",
+        "祖母"
+      ],
+      "answer": "火",
+      "explain": "火（ひ）— Lửa"
+    },
+    {
+      "section": "Kanji · Unit 46A",
+      "prompt": "（　　　）は 今 帰った ところです。",
+      "opts": [
+        "彼",
+        "両手",
+        "大勢",
+        "絵"
+      ],
+      "answer": "彼",
+      "explain": "彼（かれ）— anh ấy, bạn trai"
+    },
+    {
+      "section": "Kanji · Unit 46A",
+      "prompt": "Ａ：故障の （　　　）は わかりましたか。Ｂ：今 調べて いる ところです。",
+      "opts": [
+        "原因",
+        "両親",
+        "首",
+        "特別"
+      ],
+      "answer": "原因",
+      "explain": "原因（げんいん）— nguyên nhân"
+    },
+    {
+      "section": "Kanji · Unit 46B",
+      "prompt": "係員に（　　　）",
+      "opts": [
+        "知らせる",
+        "風",
+        "珍しい",
+        "池"
+      ],
+      "answer": "知らせる",
+      "explain": "知らせる（し）— Thông báo"
+    },
+    {
+      "section": "Kanji · Unit 46B",
+      "prompt": "（　　　）に知らせる",
+      "opts": [
+        "係員",
+        "寒い",
+        "事務所",
+        "変える"
+      ],
+      "answer": "係員",
+      "explain": "係員（かかりいん）— người quản lý"
+    },
+    {
+      "section": "Kanji · Unit 47A",
+      "prompt": "雪（　　　）が好きだ",
+      "opts": [
+        "祭り",
+        "初め",
+        "大勢",
+        "社会"
+      ],
+      "answer": "祭り",
+      "explain": "祭り（まつ）— lễ hội"
+    },
+    {
+      "section": "Kanji · Unit 47A",
+      "prompt": "（　　　）者になりたい",
+      "opts": [
+        "科学",
+        "発音",
+        "申します",
+        "初めて"
+      ],
+      "answer": "科学",
+      "explain": "科学（かがく）— khoa học"
+    },
+    {
+      "section": "Kanji · Unit 47A",
+      "prompt": "（　　　）科学の本",
+      "opts": [
+        "社会",
+        "村",
+        "初めに",
+        "寒い"
+      ],
+      "answer": "社会",
+      "explain": "社会（しゃかい）— Xã hội"
+    },
+    {
+      "section": "Kanji · Unit 47A",
+      "prompt": "社会（　　　）の本",
+      "opts": [
+        "科学",
+        "点",
+        "恥ずかしい",
+        "到着します"
+      ],
+      "answer": "科学",
+      "explain": "科学（かがく）— khoa học"
+    },
+    {
+      "section": "Kanji · Unit 47A",
+      "prompt": "広い庭で（　　　）を作る",
+      "opts": [
+        "野菜",
+        "皆さん",
+        "暑い",
+        "原因"
+      ],
+      "answer": "野菜",
+      "explain": "野菜（やさい）— rau"
+    },
+    {
+      "section": "Kanji · Unit 47A",
+      "prompt": "広い（　　　）で野菜を作る",
+      "opts": [
+        "庭",
+        "地震",
+        "火",
+        "点"
+      ],
+      "answer": "庭",
+      "explain": "庭（にわ）— vườn"
+    },
+    {
+      "section": "Kanji · Unit 47A",
+      "prompt": "（　　　）を見る",
+      "opts": [
+        "天気予報",
+        "両手",
+        "お宅",
+        "緑"
+      ],
+      "answer": "天気予報",
+      "explain": "天気予報（てんきよほう）— dự báo thời tiết"
+    },
+    {
+      "section": "Kanji · Unit 47A",
+      "prompt": "（　　　）は怖い",
+      "opts": [
+        "火事",
+        "曲",
+        "初めに",
+        "交通"
+      ],
+      "answer": "火事",
+      "explain": "火事（かじ）— Hỏa hoạn"
+    },
+    {
+      "section": "Kanji · Unit 47A",
+      "prompt": "火事は（　　　）",
+      "opts": [
+        "怖い",
+        "金",
+        "彼",
+        "彼女"
+      ],
+      "answer": "怖い",
+      "explain": "怖い（こわ）— sợ, đáng sợ"
+    },
+    {
+      "section": "Kanji · Unit 47A",
+      "prompt": "（　　　）事は怖い",
+      "opts": [
+        "火",
+        "太い",
+        "お目にかかります",
+        "忘年会"
+      ],
+      "answer": "火",
+      "explain": "火（ひ）— Lửa"
+    },
+    {
+      "section": "Kanji · Unit 47A",
+      "prompt": "強い（　　　）が吹く",
+      "opts": [
+        "風",
+        "ご存じです",
+        "発表会",
+        "彼女"
+      ],
+      "answer": "風",
+      "explain": "風（かぜ）— gió"
+    },
+    {
+      "section": "Kanji · Unit 47A",
+      "prompt": "（　　　）が亡くなった",
+      "opts": [
+        "祖父",
+        "点",
+        "首",
+        "申します"
+      ],
+      "answer": "祖父",
+      "explain": "祖父（そふ）— ông (mình)"
+    },
+    {
+      "section": "Kanji · Unit 47B",
+      "prompt": "医学の（　　　）",
+      "opts": [
+        "実験",
+        "金",
+        "祖母",
+        "自由に"
+      ],
+      "answer": "実験",
+      "explain": "実験（じっけん）— thí nghiệm, thực nghiệm"
+    },
+    {
+      "section": "Kanji · Unit 47B",
+      "prompt": "（　　　）の雑誌を読む",
+      "opts": [
+        "科学",
+        "気持ち",
+        "原因",
+        "汚い"
+      ],
+      "answer": "科学",
+      "explain": "科学（かがく）— khoa học"
+    },
+    {
+      "section": "Kanji · Unit 47B",
+      "prompt": "科学の（　　　）を読む",
+      "opts": [
+        "雑誌",
+        "金",
+        "お目にかかります",
+        "お寺"
+      ],
+      "answer": "雑誌",
+      "explain": "雑誌（ざっし）— tạp chí"
+    },
+    {
+      "section": "Kanji · Unit 47B",
+      "prompt": "会社の（　　　）",
+      "opts": [
+        "事務所",
+        "火",
+        "初めに",
+        "首相"
+      ],
+      "answer": "事務所",
+      "explain": "事務所（じむしょ）— văn phòng"
+    },
+    {
+      "section": "Kanji · Unit 47B",
+      "prompt": "法律（　　　）",
+      "opts": [
+        "事務所",
+        "怖い",
+        "柔道",
+        "暑い"
+      ],
+      "answer": "事務所",
+      "explain": "事務所（じむしょ）— văn phòng"
+    },
+    {
+      "section": "Kanji · Unit 47B",
+      "prompt": "（　　　）事務所",
+      "opts": [
+        "法律",
+        "結婚式",
+        "育てる",
+        "散歩"
+      ],
+      "answer": "法律",
+      "explain": "法律（ほうりつ）— pháp luật"
+    },
+    {
+      "section": "Kanji · Unit 47B",
+      "prompt": "試験に（　　　）した",
+      "opts": [
+        "失敗",
+        "空気",
+        "珍しい",
+        "牛乳"
+      ],
+      "answer": "失敗",
+      "explain": "失敗（しっぱい）— thất bại"
+    },
+    {
+      "section": "Kanji · Unit 47B",
+      "prompt": "（　　　）は失敗した",
+      "opts": [
+        "実験",
+        "お見舞い",
+        "庭",
+        "忙しい"
+      ],
+      "answer": "実験",
+      "explain": "実験（じっけん）— thí nghiệm, thực nghiệm"
+    },
+    {
+      "section": "Kanji · Unit 47B",
+      "prompt": "実験は（　　　）した",
+      "opts": [
+        "失敗",
+        "曲",
+        "返す",
+        "給料"
+      ],
+      "answer": "失敗",
+      "explain": "失敗（しっぱい）— thất bại"
+    },
+    {
+      "section": "Kanji · Unit 48A",
+      "prompt": "高校の（　　　）",
+      "opts": [
+        "生徒",
+        "お見舞い",
+        "以下",
+        "複雑"
+      ],
+      "answer": "生徒",
+      "explain": "生徒（せいと）— học sinh"
+    },
+    {
+      "section": "Kanji · Unit 48A",
+      "prompt": "中学校の（　　　）",
+      "opts": [
+        "生徒",
+        "優しい",
+        "原料",
+        "案内します"
+      ],
+      "answer": "生徒",
+      "explain": "生徒（せいと）— học sinh"
+    },
+    {
+      "section": "Kanji · Unit 48A",
+      "prompt": "（　　　）を教える",
+      "opts": [
+        "柔道",
+        "切符",
+        "初め",
+        "案内します"
+      ],
+      "answer": "柔道",
+      "explain": "柔道（じゅうどう）— Võ Judo (Nhu đạo)"
+    },
+    {
+      "section": "Kanji · Unit 48A",
+      "prompt": "会議の（　　　）",
+      "opts": [
+        "準備",
+        "作文",
+        "政治",
+        "太い"
+      ],
+      "answer": "準備",
+      "explain": "準備（じゅんび）— chuẩn bị"
+    },
+    {
+      "section": "Kanji · Unit 48A",
+      "prompt": "食事の（　　　）",
+      "opts": [
+        "準備",
+        "空気",
+        "原料",
+        "彼"
+      ],
+      "answer": "準備",
+      "explain": "準備（じゅんび）— chuẩn bị"
+    },
+    {
+      "section": "Kanji · Unit 48A",
+      "prompt": "試験の（　　　）",
+      "opts": [
+        "準備",
+        "切符",
+        "必ず",
+        "祭り"
+      ],
+      "answer": "準備",
+      "explain": "準備（じゅんび）— chuẩn bị"
+    },
+    {
+      "section": "Kanji · Unit 48A",
+      "prompt": "（　　　）時間",
+      "opts": [
+        "営業",
+        "お見舞い",
+        "忘年会",
+        "自然"
+      ],
+      "answer": "営業",
+      "explain": "営業（えいぎょう）— doanh nghiệp, kinh doanh"
+    },
+    {
+      "section": "Kanji · Unit 48A",
+      "prompt": "先生は （　　　）に 意見を 言わせました",
+      "opts": [
+        "生徒",
+        "文化",
+        "実験",
+        "妻"
+      ],
+      "answer": "生徒",
+      "explain": "生徒（せいと）— học sinh"
+    },
+    {
+      "section": "Kanji · Unit 48A",
+      "prompt": "体にいいので、子どもを （　　　）教室に 通わせています。",
+      "opts": [
+        "柔道",
+        "結婚式",
+        "案内します",
+        "お目にかかります"
+      ],
+      "answer": "柔道",
+      "explain": "柔道（じゅうどう）— Võ Judo (Nhu đạo)"
+    },
+    {
+      "section": "Kanji · Unit 48A",
+      "prompt": "部長は 山田さんに 会議の（　　　）をさせました。",
+      "opts": [
+        "準備",
+        "大勢",
+        "文法",
+        "絵"
+      ],
+      "answer": "準備",
+      "explain": "準備（じゅんび）— chuẩn bị"
+    },
+    {
+      "section": "Kanji · Unit 48A",
+      "prompt": "お店の （　　　）時間は 7時半から４時半までです。",
+      "opts": [
+        "営業",
+        "値段",
+        "伺います",
+        "散歩"
+      ],
+      "answer": "営業",
+      "explain": "営業（えいぎょう）— doanh nghiệp, kinh doanh"
+    },
+    {
+      "section": "Kanji · Unit 48B",
+      "prompt": "冷たい（　　　）を飲む",
+      "opts": [
+        "牛乳",
+        "全部",
+        "天気予報",
+        "狭い"
+      ],
+      "answer": "牛乳",
+      "explain": "牛乳（ぎゅうにゅう）— sữa bò"
+    },
+    {
+      "section": "Kanji · Unit 48B",
+      "prompt": "仕事が（　　　）",
+      "opts": [
+        "忙しい",
+        "参ります",
+        "恥ずかしい",
+        "科学"
+      ],
+      "answer": "忙しい",
+      "explain": "忙しい（いそが）— bận"
+    },
+    {
+      "section": "Kanji · Unit 48B",
+      "prompt": "朝は（　　　）",
+      "opts": [
+        "忙しい",
+        "作文",
+        "失敗",
+        "お宅"
+      ],
+      "answer": "忙しい",
+      "explain": "忙しい（いそが）— bận"
+    },
+    {
+      "section": "Kanji · Unit 48B",
+      "prompt": "席は（　　　）選べる",
+      "opts": [
+        "自由に",
+        "工場",
+        "洋食",
+        "返す"
+      ],
+      "answer": "自由に",
+      "explain": "自由に（じゆう）— tự do"
+    },
+    {
+      "section": "Kanji · Unit 48B",
+      "prompt": "日本語で（　　　）話せる",
+      "opts": [
+        "自由に",
+        "洋食",
+        "原因",
+        "準備"
+      ],
+      "answer": "自由に",
+      "explain": "自由に（じゆう）— tự do"
+    },
+    {
+      "section": "Kanji · Unit 48B",
+      "prompt": "子どもに （　　　）を 飲ませます。",
+      "opts": [
+        "牛乳",
+        "祖父",
+        "返事",
+        "文法"
+      ],
+      "answer": "牛乳",
+      "explain": "牛乳（ぎゅうにゅう）— sữa bò"
+    },
+    {
+      "section": "Kanji · Unit 48B",
+      "prompt": "仕事は（　　　）ですから、子どもを自由に遊ばせました。",
+      "opts": [
+        "忙しい",
+        "結婚式",
+        "彼",
+        "政治"
+      ],
+      "answer": "忙しい",
+      "explain": "忙しい（いそが）— bận"
+    },
+    {
+      "section": "Kanji · Unit 48B",
+      "prompt": "仕事は忙しいですから、子どもを（　　　）遊ばせました。",
+      "opts": [
+        "自由に",
+        "係員",
+        "生徒",
+        "出発する"
+      ],
+      "answer": "自由に",
+      "explain": "自由に（じゆう）— tự do"
+    },
+    {
+      "section": "Kanji · Unit 49A",
+      "prompt": "社長の（　　　） 木村様",
+      "opts": [
+        "奥様",
+        "出発する",
+        "水泳",
+        "珍しい"
+      ],
+      "answer": "奥様",
+      "explain": "奥様（おくさま）— Vợ (người ta)"
+    },
+    {
+      "section": "Kanji · Unit 49A",
+      "prompt": "社長の奥様 木（　　　）様",
+      "opts": [
+        "村",
+        "寒い",
+        "牛乳",
+        "作文"
+      ],
+      "answer": "村",
+      "explain": "村（むら）— làng"
+    },
+    {
+      "section": "Kanji · Unit 49A",
+      "prompt": "（　　　）は医者です",
+      "opts": [
+        "妻",
+        "家賃",
+        "生徒",
+        "散歩"
+      ],
+      "answer": "妻",
+      "explain": "妻（つま）— vợ"
+    },
+    {
+      "section": "Kanji · Unit 49A",
+      "prompt": "東京に（　　　）",
+      "opts": [
+        "出張します",
+        "初めて",
+        "お目にかかります",
+        "文化"
+      ],
+      "answer": "出張します",
+      "explain": "出張します（しゅっちょう）— Đi công tác"
+    },
+    {
+      "section": "Kanji · Unit 49B",
+      "prompt": "田中様を（　　　）か",
+      "opts": [
+        "ご存じです",
+        "用意します",
+        "家賃",
+        "心配"
+      ],
+      "answer": "ご存じです",
+      "explain": "ご存じです（ぞん）— biết"
+    },
+    {
+      "section": "Kanji · Unit 49B",
+      "prompt": "（　　　）をご存じですか",
+      "opts": [
+        "田中様",
+        "自由に",
+        "拝見します",
+        "米"
+      ],
+      "answer": "田中様",
+      "explain": "田中様（たなかさま）— Ngài Takana"
+    },
+    {
+      "section": "Kanji · Unit 49B",
+      "prompt": "日本の（　　　） 首都",
+      "opts": [
+        "首相",
+        "船",
+        "忘年会",
+        "速い"
+      ],
+      "answer": "首相",
+      "explain": "首相（しゅしょう）— Thủ tướng"
+    },
+    {
+      "section": "Kanji · Unit 49B",
+      "prompt": "日本の（　　　）相 首都",
+      "opts": [
+        "首",
+        "息子",
+        "恥ずかしい",
+        "政治"
+      ],
+      "answer": "首",
+      "explain": "首（くび）— Cái cổ"
+    },
+    {
+      "section": "Kanji · Unit 49B",
+      "prompt": "お先に（　　　）",
+      "opts": [
+        "失礼します",
+        "本物",
+        "池",
+        "自由に"
+      ],
+      "answer": "失礼します",
+      "explain": "失礼します（しつれい）— Thất lễ"
+    },
+    {
+      "section": "Kanji · Unit 50A",
+      "prompt": "部長の（　　　）",
+      "opts": [
+        "お宅",
+        "交通",
+        "笑います",
+        "給料"
+      ],
+      "answer": "お宅",
+      "explain": "お宅（たく）— nhà"
+    },
+    {
+      "section": "Kanji · Unit 50A",
+      "prompt": "（　　　）を大切にします",
+      "opts": [
+        "自然",
+        "二次会",
+        "全部",
+        "忙しい"
+      ],
+      "answer": "自然",
+      "explain": "自然（しぜん）— Tự nhiên"
+    },
+    {
+      "section": "Kanji · Unit 50A",
+      "prompt": "（　　　）に出席します",
+      "opts": [
+        "結婚式",
+        "方法",
+        "合う",
+        "参加"
+      ],
+      "answer": "結婚式",
+      "explain": "結婚式（けっこんしき）— Lễ kết hôn"
+    },
+    {
+      "section": "Kanji · Unit 50A",
+      "prompt": "工場を（　　　）",
+      "opts": [
+        "案内します",
+        "柔道",
+        "天気予報",
+        "田中様"
+      ],
+      "answer": "案内します",
+      "explain": "案内します（あんない）— Hướng dẫn"
+    },
+    {
+      "section": "Kanji · Unit 50A",
+      "prompt": "（　　　）を案内します",
+      "opts": [
+        "工場",
+        "政治",
+        "米",
+        "到着します"
+      ],
+      "answer": "工場",
+      "explain": "工場（こうじょう）— nhà máy"
+    },
+    {
+      "section": "Kanji · Unit 50A",
+      "prompt": "飛行機が（　　　）",
+      "opts": [
+        "到着します",
+        "科学",
+        "忘年会",
+        "案内します"
+      ],
+      "answer": "到着します",
+      "explain": "到着します（とうちゃく）— Đến nơi"
+    },
+    {
+      "section": "Kanji · Unit 50A",
+      "prompt": "心が（　　　）",
+      "opts": [
+        "優しい",
+        "お目にかかります",
+        "確かめます",
+        "洋食"
+      ],
+      "answer": "優しい",
+      "explain": "優しい（やさ）— hiền lành"
+    },
+    {
+      "section": "Kanji · Unit 50A",
+      "prompt": "（　　　）が優しい",
+      "opts": [
+        "心",
+        "両手",
+        "育てる",
+        "出張します"
+      ],
+      "answer": "心",
+      "explain": "心（こころ）— Trái tim, tâm hồn"
+    },
+    {
+      "section": "Kanji · Unit 50A",
+      "prompt": "お土産を（　　　）",
+      "opts": [
+        "用意します",
+        "参ります",
+        "頭",
+        "息子"
+      ],
+      "answer": "用意します",
+      "explain": "用意します（ようい）— Chuẩn bị"
+    },
+    {
+      "section": "Kanji · Unit 50A",
+      "prompt": "（　　　）を用意します",
+      "opts": [
+        "お土産",
+        "妻",
+        "火",
+        "野菜"
+      ],
+      "answer": "お土産",
+      "explain": "お土産（みやげ）— quà lưu niệm"
+    },
+    {
+      "section": "Kanji · Unit 50A",
+      "prompt": "初めに会議室へご（　　　）",
+      "opts": [
+        "案内します",
+        "石油",
+        "発表",
+        "事務所"
+      ],
+      "answer": "案内します",
+      "explain": "案内します（あんない）— Hướng dẫn"
+    },
+    {
+      "section": "Kanji · Unit 50A",
+      "prompt": "（　　　）会議室へご案内します",
+      "opts": [
+        "初めに",
+        "資料",
+        "失敗",
+        "科学"
+      ],
+      "answer": "初めに",
+      "explain": "初めに（はじ）— Trước hết, đầu tiên"
+    },
+    {
+      "section": "Kanji · Unit 50A",
+      "prompt": "（　　　）に会議室へご案内します",
+      "opts": [
+        "初め",
+        "出張します",
+        "曲",
+        "空気"
+      ],
+      "answer": "初め",
+      "explain": "初め（はじ）— ban đầu"
+    },
+    {
+      "section": "Kanji · Unit 50B",
+      "prompt": "私はミラーと（　　　）",
+      "opts": [
+        "申します",
+        "柔道",
+        "村",
+        "結婚式"
+      ],
+      "answer": "申します",
+      "explain": "申します（もう）— Nói (khiêm nhường)"
+    },
+    {
+      "section": "Kanji · Unit 50B",
+      "prompt": "（　　　）はミラーと申します",
+      "opts": [
+        "私",
+        "家賃",
+        "無理",
+        "初めて"
+      ],
+      "answer": "私",
+      "explain": "私（わたくし）— tôi"
+    },
+    {
+      "section": "Kanji · Unit 50B",
+      "prompt": "先生のお宅へ（　　　）",
+      "opts": [
+        "伺います",
+        "火",
+        "以下",
+        "法律"
+      ],
+      "answer": "伺います",
+      "explain": "伺います（うかが）— Hỏi, đến thăm"
+    },
+    {
+      "section": "Kanji · Unit 50B",
+      "prompt": "先生の（　　　）へ伺います",
+      "opts": [
+        "お宅",
+        "奥様",
+        "準備",
+        "二次会"
+      ],
+      "answer": "お宅",
+      "explain": "お宅（たく）— nhà"
+    },
+    {
+      "section": "Kanji · Unit 50B",
+      "prompt": "明日3時に（　　　）",
+      "opts": [
+        "参ります",
+        "失敗",
+        "奥様",
+        "返事"
+      ],
+      "answer": "参ります",
+      "explain": "参ります（まい）— Đi, đến (khiêm nhường)"
+    },
+    {
+      "section": "Kanji · Unit 50B",
+      "prompt": "（　　　）子どもが生まれます",
+      "opts": [
+        "さ来月",
+        "宿題",
+        "二次会",
+        "方法"
+      ],
+      "answer": "さ来月",
+      "explain": "さ来月（らいげつ）— Tháng sau nữa"
+    },
+    {
+      "section": "Kanji · Unit 50B",
+      "prompt": "奥様に（　　　）",
+      "opts": [
+        "お目にかかります",
+        "事務所",
+        "風",
+        "全部"
+      ],
+      "answer": "お目にかかります",
+      "explain": "お目にかかります（め）— Gặp (khiêm nhường)"
+    },
+    {
+      "section": "Kanji · Unit 50B",
+      "prompt": "（　　　）にお目にかかります",
+      "opts": [
+        "奥様",
+        "初めて",
+        "靴",
+        "育てる"
+      ],
+      "answer": "奥様",
+      "explain": "奥様（おくさま）— Vợ (người ta)"
+    },
+    {
+      "section": "Kanji · Unit 50B",
+      "prompt": "切符を（　　　）",
+      "opts": [
+        "拝見します",
+        "暑い",
+        "気持ち",
+        "点"
+      ],
+      "answer": "拝見します",
+      "explain": "拝見します（はいけん）— Nhìn (khiêm nhường)"
+    },
+    {
+      "section": "Kanji · Unit 50B",
+      "prompt": "（　　　）を拝見します",
+      "opts": [
+        "切符",
+        "頭",
+        "石油",
+        "変える"
+      ],
+      "answer": "切符",
+      "explain": "切符（きっぷ）— vé"
+    }
+  ]
+}
