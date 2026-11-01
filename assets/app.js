@@ -17,7 +17,7 @@ const EXAM_GRAMMAR = examData.grammar;
 const EXAM_KANJI = examData.kanji;
 const pageNames = ["home","dictionary","grammar","practice","exam","review","stats"];
 const pageMarkup = await Promise.all(pageNames.map(name =>
-  fetch('./pages/' + name + '.html').then(readText)
+  fetch('./pages/' + name + '.html?v=pixel-20261101').then(readText)
 ));
 document.getElementById('pageMount').innerHTML = pageMarkup.join('\n');
 /* Pixel interface details adapted to the split-page app. */
