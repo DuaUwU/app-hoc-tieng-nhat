@@ -492,3 +492,7 @@ body.exam-focus .exam-progress-head{background:var(--paper);box-shadow:var(--pxb
   .petal,.cloud{display:none}
 }
 
+
+/* Hiệu năng: bỏ qua render các mục ngoài màn hình, giữ chỗ cho vùng nội dung để tránh nhảy layout. */
+.item{content-visibility:auto;contain-intrinsic-size:auto 64px}
+#pageMount{min-height:60vh}

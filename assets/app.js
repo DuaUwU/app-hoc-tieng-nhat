@@ -1,5 +1,5 @@
 const pageNames = ["home","dictionary","grammar","practice","exam","review","stats"];
-const ASSET_VER = 'pixel-20261102d';
+const ASSET_VER = 'pixel-20261102e';
 /* Tải song song dữ liệu và các trang con để tránh chuỗi chờ nối tiếp. exam.json chỉ tải khi cần. */
 const [kanjiData, vocabularyData, grammarData, grammarFixData, ...pageMarkup] = await Promise.all([
   fetch('./data/kanji.json').then(readJson),
@@ -390,3 +390,9 @@ if('speechSynthesis'in window)speechSynthesis.getVoices();
 
 /* Tải sẵn đề thi khi trình duyệt rảnh để vào Giải đề không phải chờ. */
 (window.requestIdleCallback||(f=>setTimeout(f,2500)))(()=>{loadExamData().catch(()=>{})});
+
+/* PWA: lưu đệm để mở lại nhanh và dùng được khi mất mạng. */
+if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+  const registerSW = () => navigator.serviceWorker.register('./sw.js').catch(() => {});
+  if (document.readyState === 'complete') registerSW(); else window.addEventListener('load', registerSW);
+}

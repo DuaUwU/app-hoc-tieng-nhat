@@ -1,0 +1,12 @@
+{
+  "name": "ことば — Học tiếng Nhật N4",
+  "short_name": "ことば",
+  "description": "Tự học tiếng Nhật N4: từ vựng, Kanji, ngữ pháp, luyện nghe và trắc nghiệm.",
+  "lang": "vi",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4efe6",
+  "theme_color": "#f4efe6",
+  "icons": [{ "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}
