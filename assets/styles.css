@@ -375,7 +375,7 @@ input[type=checkbox]:checked{background-color:var(--pink);
 .pill,.exam-section-tag,.tag-added{border:0!important;border-radius:0!important;background:var(--sun);color:var(--ink);font-weight:800;padding:2px 10px!important;box-shadow:var(--pxb);margin:3px}
 .grammar-card h3{font-size:19px;font-weight:800}
 .grammar-card .formula{background:var(--sky-soft);padding:10px 14px;margin:8px 3px;color:var(--accent);font-weight:700;box-shadow:var(--pxb)}
-.gtable{border-collapse:separate;border-spacing:0}
+.gtable{width:100%;table-layout:fixed;border-collapse:separate;border-spacing:0;margin:8px 0}
 .gtable th,.gtable td{border:0;border-bottom:3px dotted var(--line);padding:8px 10px}
 .gtable th{background:var(--sun);color:var(--ink)}
 .grammar-example{padding:8px 0;border-bottom:3px dotted var(--line)}
