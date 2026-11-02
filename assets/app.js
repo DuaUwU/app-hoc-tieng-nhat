@@ -1,10 +1,17 @@
-const [kanjiData, vocabularyData, grammarData, examData, grammarFixData] = await Promise.all([
+const pageNames = ["home","dictionary","grammar","practice","exam","review","stats"];
+const ASSET_VER = 'pixel-20261102d';
+/* Tải song song dữ liệu và các trang con để tránh chuỗi chờ nối tiếp. exam.json chỉ tải khi cần. */
+const [kanjiData, vocabularyData, grammarData, grammarFixData, ...pageMarkup] = await Promise.all([
   fetch('./data/kanji.json').then(readJson),
   fetch('./data/vocabulary.json').then(readJson),
   fetch('./data/grammar.json').then(readJson),
-  fetch('./data/exam.json').then(readJson),
   fetch('./data/grammar-fixes.json').then(readJson),
+  ...pageNames.map(name => fetch('./pages/' + name + '.html?v=' + ASSET_VER).then(readText)),
 ]);
+let examPromise = null;
+function loadExamData() {
+  return examPromise || (examPromise = fetch('./data/exam.json').then(readJson).catch(err => { examPromise = null; throw err; }));
+}
 async function readJson(response) {
   if (!response.ok) throw new Error('Không tải được dữ liệu học: ' + response.url);
   return response.json();
@@ -14,12 +21,8 @@ const KANJI_DATA = kanjiData.items;
 const VOCAB_UNITS = vocabularyData.lessons;
 const VOCAB_DATA = vocabularyData.items;
 const GRAMMAR = grammarData;
-const EXAM_GRAMMAR = examData.grammar;
-const EXAM_KANJI = examData.kanji;
-const pageNames = ["home","dictionary","grammar","practice","exam","review","stats"];
-const pageMarkup = await Promise.all(pageNames.map(name =>
-  fetch('./pages/' + name + '.html?v=pixel-20261102d').then(readText)
-));
+let EXAM_GRAMMAR = [];
+let EXAM_KANJI = [];
 document.getElementById('pageMount').innerHTML = pageMarkup.join('\n');
 /* Pixel interface details adapted to the split-page app. */
 (() => {
@@ -171,7 +174,7 @@ function renderVocab(){const q=$('vocabSearch').value.trim().toLowerCase(),l=$('
 function renderKanji(){const q=$('kanjiSearch').value.trim().toLowerCase(),u=$('kanjiUnit').value;const arr=KANJI_DATA.filter(x=>(u==='all'||x.unit===u)&&[x.kanji,x.hanViet,x.nghia,x.tuVi,x.doc,x.tuViNghia,x.goiNho].join(' ').toLowerCase().includes(q));$('kanjiList').innerHTML=arr.slice(0,180).map(x=>{return `<article class="item"><div class="item-main"><b class="jp" style="font-size:25px">${esc(x.kanji)}</b> <b>${esc(x.hanViet)}</b><p>${esc(x.nghia||'')}</p><div class="meta">Unit ${esc(x.unit)} · ${esc(x.tuVi||'')} ${esc(x.doc||'')} ${esc(x.tuViNghia||'')}</div>${x.goiNho?`<div class="meta">Mẹo nhớ: ${esc(x.goiNho)}</div>`:''}</div>${x.doc?`<button class="btn small" data-speak="${esc(x.doc)}">Nghe</button>`:''}</article>`}).join('')||'<div class="empty">Không tìm thấy Kanji.</div>';bindSpeak($('kanjiList'))}
 function bindSpeak(root){root.querySelectorAll('[data-speak]').forEach(b=>b.addEventListener('click',()=>speak(b.dataset.speak)))}
 function speak(text,rate){if(!('speechSynthesis'in window)){toast('Trình duyệt này chưa hỗ trợ đọc văn bản. Thử Chrome hoặc Edge.');return}try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang='ja-JP';u.rate=Number(rate||$('speechRate')?.value||.9);const voices=speechSynthesis.getVoices();const jp=voices.find(v=>v.lang.toLowerCase().startsWith('ja'));if(jp)u.voice=jp;speechSynthesis.speak(u)}catch(e){toast('Không phát được âm thanh trên thiết bị này.')}}
-$('vocabSearch').addEventListener('input',renderVocab);$('vocabLesson').addEventListener('change',renderVocab);$('vocabSort').addEventListener('change',renderVocab);$('kanjiSearch').addEventListener('input',renderKanji);$('kanjiUnit').addEventListener('change',renderKanji);
+const debounce=(fn,ms=180)=>{let t;return(...a)=>{clearTimeout(t);t=setTimeout(()=>fn(...a),ms)}};$('vocabSearch').addEventListener('input',debounce(renderVocab));$('vocabLesson').addEventListener('change',renderVocab);$('vocabSort').addEventListener('change',renderVocab);$('kanjiSearch').addEventListener('input',debounce(renderKanji));$('kanjiUnit').addEventListener('change',renderKanji);
 // Flashcard feature removed by request. Dictionary search and filters remain available.\n// Grammar records imported from ngu_phap_N4_bai26-50.json (Lessons 26–50).
 
 function cleanJa(s){return String(s||'').replace(/^\s*[QAB母子ＱＡＢ]\s*[:：]\s*/,'').replace(/(?<=[^\x00-\x7F])\s+(?=[^\x00-\x7F])/g,'').trim()}
@@ -357,7 +360,8 @@ function examAnswer(i){
  $('examFeedback').classList.remove('hidden');$('examNext').disabled=false;
  $('examProgressBar').style.width=((examRun.idx+1)/examRun.qs.length*100)+'%';
 }
-function examStart(){
+async function examStart(){
+ try{const ed=await loadExamData();EXAM_GRAMMAR=ed.grammar;EXAM_KANJI=ed.kanji}catch(e){toast('Không tải được đề thi. Kiểm tra kết nối rồi thử lại.');return}
  clearInterval(examRun.timer);examRun.qs=examBuildQuestions();examRun.idx=0;examRun.answers=[];examRun.started=Date.now();examRun.remaining=70*60;
  if(!examRun.qs.length){toast('Chưa tạo được đề. Kiểm tra dữ liệu câu hỏi.');return}
  $('examSetup').classList.add('hidden');$('examResult').classList.add('hidden');$('examPlay').classList.remove('hidden');document.body.classList.add('exam-focus');
@@ -383,3 +387,6 @@ $('examReviewToggle').onclick=()=>{const shown=!$('examReview').classList.contai
 setDictionaryTab('vocab');renderVocab();renderKanji();renderGrammar();renderReviewList();updateDashboard();showPage(pageFromPath());
 if('speechSynthesis'in window)speechSynthesis.getVoices();
 
+
+/* Tải sẵn đề thi khi trình duyệt rảnh để vào Giải đề không phải chờ. */
+(window.requestIdleCallback||(f=>setTimeout(f,2500)))(()=>{loadExamData().catch(()=>{})});
